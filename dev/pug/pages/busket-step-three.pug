@@ -1,0 +1,49 @@
+.s-busket-step-three
+    .container
+        .busket-step-three
+            .page__top
+                h1.page__title Ваша корзина
+                .page__descr Оплата
+
+        .busket-data
+            .busket-data__item.busket-data--pr
+                .data-item__title Выбрать доставку
+                .data-item__radio
+                    .data-item__input-item.data-item--radio
+                        label(for="yandex" class="data-radio--label") Яндекс деньги
+                            input(type="radio" name="name" checked="checked" id="yandex" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/yandex-money.png" alt="Яндекс деньги").data-item__logo
+                    .data-item__input-item.data-item--radio
+                        label(for="qiwi" class="data-radio--label") QIWI
+                            input(type="radio" name="name" id="qiwi" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/qiwi.png" alt="Qiwi").data-item__logo
+                    .data-item__input-item.data-item--radio
+                        label(for="webmoney" class="data-radio--label") WebMoney
+                            input(type="radio" name="name" id="webmoney" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/webmoney.png" alt="WebMoney").data-item__logo
+                    .data-item__input-item.data-item--radio
+                        label(for="cart" class="data-radio--label") Картой
+                            input(type="radio" name="name" id="cart" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/cart.png" alt="Картой").data-item__logo
+                    .data-item__input-item.data-item--radio.data-item-radio--mini
+                        label(for="receipt" class="data-radio--label") При получении
+                            input(type="radio" name="name" id="receipt" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/money.png" alt="При получении").data-item__logo
+
+            .busket-data__item
+                .busket-product__total.busket-data--price
+                    .total
+                        .total-price
+                            .total__text Итого:
+                            .total__price 6.060
+                                +icon('ruble','total__icon')
+                        .total__btn
+                            a(href="http://localhost:3000/busket-step-2.html").step-btn.step-btn__left Назад
+                                +icon('left-arrow','step-btn__icon back')
+                            a(href="http://localhost:3000/busket-step-4.html").step-btn Далее
+                                +icon('right-arrow','step-btn__icon')

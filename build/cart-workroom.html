@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Карточка мастерской</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-theme" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="cart-workroom-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container__new">
+          <div class="header-top">
+            <div class="mobile-menu">
+              <div class="sandwich">
+                <div class="sandwich__line sandwich__line--top"></div>
+                <div class="sandwich__line sandwich__line--middle"></div>
+                <div class="sandwich__line sandwich__line--bottom"></div>
+              </div>
+            </div>
+            <div class="header-top__item order-1">
+              <div class="header-top__logo logo"><a class="logo__link" href="http://localhost:3000/index.html">
+                  <svg class="svg-sprite-icon  icon-logo icon__logo">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+                  </svg></a></div>
+            </div>
+            <div class="header-top__item locations">
+              <div class="location"><span class="location__text">Санкт-Петербург</span>
+                <svg class="svg-sprite-icon  icon-location-icon location__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#location-icon"></use>
+                </svg>
+                <div class="location__popup">
+                  <div class="l-triangle"></div>
+                  <div class="l-popup">
+                    <div class="l-popup__title">Ваш город определен верно?</div>
+                    <div class="l-popup__inner">
+                      <button class="l-popup__btn l-popup--active">Да, все верно</button>
+                      <button class="l-popup__btn">Нет, сменить регион</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-top__item order-2">
+              <div class="header-top__search search">
+                <input class="search__input" type="search" name="search" aria-label="search" id="search" placeholder="Что ищем?">
+                <button class="button__search" type="button" aria-label="поиск по сайту">
+                  <svg class="svg-sprite-icon  icon-search search__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="header-top__item order-4"><a class="sing-in" href="#" aria-label="Вход"><span>Вход</span>
+                <svg class="svg-sprite-icon  icon-lock sing-in__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#lock"></use>
+                </svg></a></div>
+            <div class="header-top__item order-3"><a href="http://localhost:3000/busket-step-1.html">
+                <div class="basket">
+                  <div class="basket__logo">
+                    <svg class="svg-sprite-icon  icon-basket basket__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                    </svg>
+                    <div class="basket__count count"><span>3</span></div>
+                  </div>
+                  <div class="summa">12.000 руб.</div>
+                  <div class="basket__sale sale"><span>-10%</span></div>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header-body nav-menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/catalog-workroom.html">Каталог мастерских</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/rating-workroom.html">Рейтинг</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/catalog-product.html">Магазин</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/forum.html">Форум</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/literatura.html">Литература</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/video-lesson.html">Видеуроки</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://localhost:3000/blog.html">Блог</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs-inner">
+              <div class="breadcrumbs-inner__home breadcrumbs-inner__link"><a class="breadcrumbs-inner__link" href="http://localhost:3000/index.html">Главная</a></div>
+              <div class="breadcrumbs-inner__item">
+                <div class="breadcrumbs-inner__forum">Карточка мастерской</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-cart-workroom">
+          <div class="container">
+            <div class="cart-workroom">
+              <div class="page__top cart-product--page">
+                <h1 class="page__title">Студия гончарного дела</h1>
+                <div class="page__btn cart-product--btn">
+                  <div class="a-btn btn__offer-video catalog-workroom--btn">
+                    <div class="page-btn__text">Добавить свою мастерскую</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-workroom__inner">
+                <div class="cart-work">
+                  <div class="cart-work__left">
+                    <picture>
+                      <source srcset="static/images/img/cart-work-phone.jpg" media="(max-width: 321px)">
+                      <source srcset="static/images/img/cart-work-mini.jpg" media="(max-width: 481px)">
+                      <source srcset="static/images/img/cart-work-middle.jpg" media="(max-width: 769px)"><img class="cart-work__img" src="static/images/img/cart-workroom/cart-workroom-item.jpg">
+                    </picture>
+                    <div class="cart-work__rating">
+                      <div class="cart-rating__title">Рейтинг мастерской</div>
+                      <div class="cart-rating">
+                        <div class="rating">
+                          <div class="rating__icon">
+                            <svg class="svg-sprite-icon  icon-star rating__star">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-star rating__star">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-star rating__star">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-star rating__star">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon  icon-star rating__star">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                          </div>
+                          <div class="rating__count">5.0</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-work__right">
+                    <div class="cart-work__top">
+                      <div class="cart-work__item">
+                        <div class="cart-rating">
+                          <div class="cart-rating__title">Рейтинг мастерской</div>
+                          <div class="cart-rating">
+                            <div class="rating">
+                              <div class="rating__icon">
+                                <svg class="svg-sprite-icon  icon-star rating__star orange">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon  icon-star rating__star orange">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon  icon-star rating__star orange">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon  icon-star rating__star orange">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon  icon-star rating__star orange">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                                </svg>
+                              </div>
+                              <div class="rating__count">4.5</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-work__item">
+                        <div class="cart-price">
+                          <div class="cart-price__text"><span>цена одного изделия от</span></div>
+                          <div class="cart-price__count">290</div>
+                          <svg class="svg-sprite-icon  icon-ruble cart-price__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="cart-work__item"><img class="slava-img" src="static/images/img/cart-workroom/slava_logo.png" alt="Cлава"></div>
+                    </div>
+                    <div class="cart-work__body">
+                      <div class="rating-body__col">
+                        <div class="rating-body__title">Адрес:</div>
+                        <div class="rating-body__inner"><span class="rating-body__address">г.Санкт-Петербург, ул.Пушкина, дом 23, 8 этаж офис 108а</span><a class="rating-body__address-all" href="#">еще 3</a></div>
+                        <div class="rating-body__maps cart-work--margin-top"><a href="#">Показать на карте</a></div>
+                      </div>
+                      <div class="rating-body__col">
+                        <div class="rating-body__title">Телефон:</div><a class="rating-body__phone" href="tel:79085541892">+7 (908) 554-18-92</a><a class="rating-body__phone" href="tel:79085541892">+7 (908) 554-18-92</a>
+                        <div class="rating-body__email cart-work--margin-top"><a href="mailto:goncharnay@mail.ru">Написать на почту</a></div>
+                      </div>
+                      <div class="rating-body__col">
+                        <div class="rating-body__title">График работы:</div>
+                        <div class="rating-body__phone">Пн.- Пт. с 10:00 до 22:00</div>
+                        <div class="rating-body__phone">Сб. и Вс.- выходной день</div>
+                        <div class="state-workroom open-workroom cart-work--state cart-work--margin-top">Сейчас открыто</div>
+                      </div>
+                    </div>
+                    <div class="cart-work__footer">
+                      <div class="cart-footer">
+                        <div class="cart-footer__text"><span>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</span></div>
+                        <div class="cart-footer__btn">
+                          <div class="btn-write-vendor" aria-label="Написать продавцу">Написать продавцу
+                            <svg class="svg-sprite-icon  icon-email btn-write-vendor__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#email"></use>
+                            </svg>
+                          </div>
+                          <div class="btn-add-favorite" aria-label="Добавить в избранное">Добавить в избранное
+                            <svg class="svg-sprite-icon  icon-star btn-add-favorite__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-workroom__advantage">
+              <div class="advantages">
+                <div class="advantages__col">
+                  <div class="adv-content">
+                    <div class="adv-img"><img class="adv__img" src="static/images/img/delivery.png"></div>
+                    <div class="adv-content__title">Доставка</div>
+                    <div class="adv-content__text">Продавайте по всей России, за доставку платит покупатель</div><a class="detail" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="advantages__col">
+                  <div class="adv-content">
+                    <div class="adv-img"><img class="adv__img" src="static/images/img/adv-like.png"></div>
+                    <div class="adv-content__title">Гарантия</div>
+                    <div class="adv-content__text">У всех товаров есть минимальная гарантия 6 месяцев</div><a class="detail" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="advantages__col">
+                  <div class="adv-content">
+                    <div class="adv-img"><img class="adv__img" src="static/images/img/payment.png"></div>
+                    <div class="adv-content__title">Способы оплаты</div>
+                    <div class="adv-content__text">Мы принимаем все способы оплаты для вашего удобства</div><a class="detail" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="s-filiation-workroom">
+          <div class="container">
+            <div class="filiation-workroom">
+              <h2 class="filiation-workroom__title">Филиалы нашей мастерской
+                <div class="cart-title-count" id="f-count" aria-label="Колличество филиалов мастерских">32</div>
+              </h2>
+            </div>
+          </div>
+          <div class="filiation-workroom__maps"><img class="filiation-workroom__img" src="static/images/img/cart-workroom-map.jpg" alt="Филиалы нашей мастерской на карте"></div>
+        </section>
+        <section class="s-photo-workroom">
+          <div class="container">
+            <div class="photo-workroom">
+              <div class="photoworkroom">
+                <div class="photoworkroom__title dflex-aic">
+                  <h2 class="s-photo-workroom__title"> Фото наших мастерских
+                    <div class="cart-title-count" id="photo-count" aria-label="Колличество фото мастерских">120</div>
+                  </h2><a class="all-master s-text-ml-auto s-photo-workroom--all-master" href="http://localhost:3000/video-lesson.html">Все фото</a>
+                  <div class="all-slider__inner s-arrow-ml">
+                    <div class="all-slider all-slider__photo--prev all-slider--active">
+                      <svg class="svg-sprite-icon  icon-arrow-prev all-slider__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-prev"></use>
+                      </svg>
+                    </div>
+                    <div class="all-slider all-slider__photo--next">
+                      <svg class="svg-sprite-icon  icon-arrow-next all-slider__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-next"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="js-photoworkroom">
+                  <div class="js-photoworkroom__wrapper">
+                    <ul class="js-photoworkroom__list">
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-9.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-7.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-11.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-10.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-9.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-7.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-11.jpg')"></li>
+                      <li class="s-photo-workroom__item" style="background-image: url('static/images/img/item-10.jpg')"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-detail-description">
+          <div class="container">
+            <div class="detail-description__inner">
+              <div class="detail-description">
+                <h2 class="detail-description__title">Подробное описание</h2>
+                <p class="detail-description__text">Равным образом сложившаяся структура организации играет важную роль в формировании модели развития. Таким образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Повседневная практика показывает, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации систем массового участия. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание модели развития.</p>
+                <p class="detail-description__text">Разнообразный и богатый опыт консультация с широким активом представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+                <p class="detail-description__text">Не следует, однако забывать, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</p>
+              </div>
+              <div class="detail-description-adv">
+                <h3 class="detail-description-adv__title">Характеристики товара</h3>
+                <div class="detail-description-adv__inner">
+                  <div class="detail-description-adv__col">
+                    <div class="d-advantage__item">
+                      <div class="d-advantage__left">Материал</div>
+                      <div class="d-advantage__line"></div>
+                      <div class="d-advantage__right">глина</div>
+                    </div>
+                    <div class="d-advantage__item">
+                      <div class="d-advantage__left">Цвет</div>
+                      <div class="d-advantage__line"></div>
+                      <div class="d-advantage__right">микс</div>
+                    </div>
+                    <div class="d-advantage__item">
+                      <div class="d-advantage__left">Вес</div>
+                      <div class="d-advantage__line"></div>
+                      <div class="d-advantage__right">от 320 гр.</div>
+                    </div>
+                  </div>
+                  <div class="detail-description-adv__col">
+                    <div class="d-advantage__item">
+                      <div class="d-advantage__left">Доставка</div>
+                      <div class="d-advantage__line"></div>
+                      <div class="d-advantage__right">за счет покупателя</div>
+                    </div>
+                    <div class="d-advantage__item">
+                      <div class="d-advantage__left">Гарантия</div>
+                      <div class="d-advantage__line"></div>
+                      <div class="d-advantage__right">3 месяца</div>
+                    </div>
+                    <div class="d-advantage__item">
+                      <div class="d-advantage__left">Город</div>
+                      <div class="d-advantage__line"></div>
+                      <div class="d-advantage__right">Москва</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-cart-workroom-tabs">
+          <div class="container">
+            <div class="cart-workroom-tabs">
+              <div class="cart-tabs">
+                <div class="cart-tabs__item">
+                  <div class="cart-tabs__title active">Мы продаем
+                    <div class="cart-title-count" id="sell-count" aria-label="Колличество товаров">23</div>
+                  </div>
+                  <div class="cart-tabs__content">
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Золотой ключик</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Кот с клубком ниток</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Маргарита М.</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Петух цветной</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-2.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Гончарный мастер</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Набор посуды из глины</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-3.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Константин П.</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Ежик в тумане</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-4.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Чаша</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Чашка для кофе</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-5.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Валентина Г.</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Чайник</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Золотой ключик</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Кот с клубком ниток</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-2.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Гончарный мастер</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Набор посуды из глины</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-4.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Чаша</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Чашка для кофе</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Золотой ключик</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Кот с клубком ниток</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Маргарита М.</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Петух цветной</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-2.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Гончарный мастер</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Набор посуды из глины</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-3.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Константин П.</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Ежик в тумане</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-4.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Чаша</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Чашка для кофе</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item-5.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Валентина Г.</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Чайник</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="catalog-items tabs-sell-item">
+                      <div class="catalog-items__img" style="background-image: url('static/images/img/catalog/product-item.jpg')">
+                        <div class="catalog-items__content">
+                          <div class="catalog-items__text">Золотой ключик</div>
+                          <div class="catalog-items__rating"></div>
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="catalog-items__foto">
+                          <svg class="svg-sprite-icon  icon-camera catalog-items__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#camera"></use>
+                          </svg><span class="catalog-items__count">15</span>
+                        </div>
+                      </div>
+                      <div class="catalog-body">
+                        <div class="catalog-body__left">
+                          <div class="catalog-body__name">Кот с клубком ниток</div>
+                          <div class="catalog-body__price"><span>790</span>
+                            <svg class="svg-sprite-icon  icon-ruble catalog-body__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog-body__right">
+                          <svg class="svg-sprite-icon  icon-basket catalog-body__basket">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="cart-tabs__pagination">
+                    <div class="s-pagination">
+                      <div class="pagination">
+                        <ul class="pagination__list">
+                          <li class="pagination__item"><a class="pagination__link pagination-active pagination--40x40" href="#">
+                              <svg class="svg-sprite-icon  icon-left-arrow pagination__icon pagination-active">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#left-arrow"></use>
+                              </svg></a></li>
+                          <li class="pagination__item"><a class="pagination__link pagination--40x40" href="#">1</a></li>
+                          <li class="pagination__item"><a class="pagination__link pagination--40x40" href="#">2</a></li>
+                          <li class="pagination__item"><a class="pagination__link pagination-active pagination--40x40" href="#">3</a></li>
+                          <li class="pagination__item pagination__item--clear"><a class="pagination__link pagination--40x40" href="#">4</a></li>
+                          <li class="pagination__item"><a class="pagination__link pagination--icon pagination--40x40" href="#">
+                              <svg class="svg-sprite-icon  icon-p-dots pagination__icon pagination__dots">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#p-dots"></use>
+                              </svg></a></li>
+                          <li class="pagination__item pagination__item--clear"><a class="pagination__link pagination--40x40" href="#">24</a></li>
+                          <li class="pagination__item"><a class="pagination__link pagination--40x40" href="#">
+                              <svg class="svg-sprite-icon  icon-right-arrow pagination__icon">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#right-arrow"></use>
+                              </svg></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--.cart-tabs__item-->
+                <!--    .cart-tabs__title Мастер классы-->
+                <!--        .cart-title-count#mc-count(aria-label="Колличество мастер классов") 34-->
+                <!--    .cart-tabs__content-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-video-lesson">
+          <div class="container">
+            <div class="video-lesson">
+              <div class="videolesson">
+                <div class="videolesson__title dflex-aic s-video-lesson--dflex-aic">
+                  <h2 class="s-video-lesson__title">Видеоуроки от нашей мастерской
+                    <div class="cart-title-count" id="video-lesson-count" aria-label="Колличество видеоуроков">80</div>
+                  </h2><a class="all-master s-text-ml-auto s-photo-workroom--all-master" href="http://localhost:3000/video-lesson.html">Все уроки</a>
+                  <div class="all-slider__inner s-arrow-ml">
+                    <div class="all-slider all-slider__video--prev all-slider--active">
+                      <svg class="svg-sprite-icon  icon-arrow-prev all-slider__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-prev"></use>
+                      </svg>
+                    </div>
+                    <div class="all-slider all-slider__video--next">
+                      <svg class="svg-sprite-icon  icon-arrow-next all-slider__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-next"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="js-videolesson">
+                  <div class="js-videolesson__wrapper">
+                    <div class="js-videolesson__list">
+                      <div class="all-slider__video-inner s-video-lesson--inner">
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-7.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="all-slider__video-inner s-video-lesson--inner">
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-7.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="all-slider__video-inner s-video-lesson--inner">
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-7.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="all-slider__video-inner s-video-lesson--inner">
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="all-slider__video-item s-video-lesson__item">
+                          <div class="all-slider__smile" style="background-image: url('static/images/img/item-7.jpg')">
+                            <div class="video-item">
+                              <div class="video-item__title">Видео обучающий урок по гончарному делу</div>
+                              <div class="video-play video-play--bottom">
+                                <svg class="svg-sprite-icon  icon-video-play video-play__icon">
+                                  <use xlink:href="static/images/svg/symbol/sprite.svg#video-play"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-other-articles">
+          <div class="container">
+            <div class="other-articles cart-workroom--tablet-big">
+              <div class="articles__slider s-other-articles--slider">
+                <div class="articles__title dflex-aic s-video-lesson--dflex-aic">
+                  <h2 class="s-other-articles__title">Статьи от нашей мастерской
+                    <div class="cart-title-count" id="other-count" aria-label="Колличество статей">230</div>
+                  </h2><a class="all-master s-text-ml-auto s-photo-workroom--all-master" href="http://localhost:3000/blog.html">Все статьи</a>
+                  <div class="all-slider__inner s-arrow-ml">
+                    <div class="all-slider all-slider__articles--prev all-slider--active">
+                      <svg class="svg-sprite-icon  icon-arrow-prev all-slider__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-prev"></use>
+                      </svg>
+                    </div>
+                    <div class="all-slider all-slider__articles--next">
+                      <svg class="svg-sprite-icon  icon-arrow-next all-slider__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-next"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="other-articles__wrapper">
+                  <div class="js-article s-other-articles--js">
+                    <div class="js-article__wrapper">
+                      <div class="js-article__list">
+                        <li class="article__items s-other-articles--items">
+                          <div class="article__item" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="articles__count">
+                              <div class="pottery-content__count">
+                                <div class="view">
+                                  <div class="view__icon">
+                                    <svg class="svg-sprite-icon  icon-eye view__eye">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="view__count">1058</div>
+                                </div>
+                                <div class="massage">
+                                  <div class="massage__icon">
+                                    <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="massage__count">13</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-body">
+                            <div class="article-body__title">
+                              <h3>Сегодня очень популярным является увлечение старинным ремеслом</h3>
+                            </div>
+                            <div class="article-body__descr">
+                              <p>Сегодня очень популярным является увлечение каким-либо старинным ремеслом. Гончарное дело, ткацкое ремесло, резьба по дереву, кузнечное дело - каждый выбирает то что ему по душе. Сегодня очень популярным является увлечение каким-либо старинным ремеслом...</p>
+                            </div>
+                          </div>
+                          <div class="article__btn"><a class="a-btn" href="#">Подробнее</a></div>
+                        </li>
+                        <li class="article__items s-other-articles--items">
+                          <div class="article__item" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="articles__count">
+                              <div class="pottery-content__count">
+                                <div class="view">
+                                  <div class="view__icon">
+                                    <svg class="svg-sprite-icon  icon-eye view__eye">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="view__count">1058</div>
+                                </div>
+                                <div class="massage">
+                                  <div class="massage__icon">
+                                    <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="massage__count">13</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-body">
+                            <div class="article-body__title">
+                              <h3>Сегодня очень популярным является увлечение старинным ремеслом</h3>
+                            </div>
+                            <div class="article-body__descr">
+                              <p>Сегодня очень популярным является увлечение каким-либо старинным ремеслом. Гончарное дело, ткацкое ремесло, резьба по дереву, кузнечное дело - каждый выбирает то что ему по душе. Сегодня очень популярным является увлечение каким-либо старинным ремеслом...</p>
+                            </div>
+                          </div>
+                          <div class="article__btn"><a class="a-btn" href="#">Подробнее</a></div>
+                        </li>
+                        <li class="article__items s-other-articles--items">
+                          <div class="article__item" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="articles__count">
+                              <div class="pottery-content__count">
+                                <div class="view">
+                                  <div class="view__icon">
+                                    <svg class="svg-sprite-icon  icon-eye view__eye">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="view__count">1058</div>
+                                </div>
+                                <div class="massage">
+                                  <div class="massage__icon">
+                                    <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="massage__count">13</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-body">
+                            <div class="article-body__title">
+                              <h3>Сегодня очень популярным является увлечение старинным ремеслом</h3>
+                            </div>
+                            <div class="article-body__descr">
+                              <p>Сегодня очень популярным является увлечение каким-либо старинным ремеслом. Гончарное дело, ткацкое ремесло, резьба по дереву, кузнечное дело - каждый выбирает то что ему по душе. Сегодня очень популярным является увлечение каким-либо старинным ремеслом...</p>
+                            </div>
+                          </div>
+                          <div class="article__btn"><a class="a-btn" href="#">Подробнее</a></div>
+                        </li>
+                        <li class="article__items s-other-articles--items">
+                          <div class="article__item" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="articles__count">
+                              <div class="pottery-content__count">
+                                <div class="view">
+                                  <div class="view__icon">
+                                    <svg class="svg-sprite-icon  icon-eye view__eye">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="view__count">1058</div>
+                                </div>
+                                <div class="massage">
+                                  <div class="massage__icon">
+                                    <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="massage__count">13</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-body">
+                            <div class="article-body__title">
+                              <h3>Сегодня очень популярным является увлечение старинным ремеслом</h3>
+                            </div>
+                            <div class="article-body__descr">
+                              <p>Сегодня очень популярным является увлечение каким-либо старинным ремеслом. Гончарное дело, ткацкое ремесло, резьба по дереву, кузнечное дело - каждый выбирает то что ему по душе. Сегодня очень популярным является увлечение каким-либо старинным ремеслом...</p>
+                            </div>
+                          </div>
+                          <div class="article__btn"><a class="a-btn" href="#">Подробнее</a></div>
+                        </li>
+                        <li class="article__items s-other-articles--items">
+                          <div class="article__item" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="articles__count">
+                              <div class="pottery-content__count">
+                                <div class="view">
+                                  <div class="view__icon">
+                                    <svg class="svg-sprite-icon  icon-eye view__eye">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="view__count">1058</div>
+                                </div>
+                                <div class="massage">
+                                  <div class="massage__icon">
+                                    <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="massage__count">13</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-body">
+                            <div class="article-body__title">
+                              <h3>Сегодня очень популярным является увлечение старинным ремеслом</h3>
+                            </div>
+                            <div class="article-body__descr">
+                              <p>Сегодня очень популярным является увлечение каким-либо старинным ремеслом. Гончарное дело, ткацкое ремесло, резьба по дереву, кузнечное дело - каждый выбирает то что ему по душе. Сегодня очень популярным является увлечение каким-либо старинным ремеслом...</p>
+                            </div>
+                          </div>
+                          <div class="article__btn"><a class="a-btn" href="#">Подробнее</a></div>
+                        </li>
+                        <li class="article__items s-other-articles--items">
+                          <div class="article__item" style="background-image: url('static/images/img/item-6.jpg')">
+                            <div class="articles__count">
+                              <div class="pottery-content__count">
+                                <div class="view">
+                                  <div class="view__icon">
+                                    <svg class="svg-sprite-icon  icon-eye view__eye">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="view__count">1058</div>
+                                </div>
+                                <div class="massage">
+                                  <div class="massage__icon">
+                                    <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                      <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="massage__count">13</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="article-body">
+                            <div class="article-body__title">
+                              <h3>Сегодня очень популярным является увлечение старинным ремеслом</h3>
+                            </div>
+                            <div class="article-body__descr">
+                              <p>Сегодня очень популярным является увлечение каким-либо старинным ремеслом. Гончарное дело, ткацкое ремесло, резьба по дереву, кузнечное дело - каждый выбирает то что ему по душе. Сегодня очень популярным является увлечение каким-либо старинным ремеслом...</p>
+                            </div>
+                          </div>
+                          <div class="article__btn"><a class="a-btn" href="#">Подробнее</a></div>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="other-articles__banner">
+                    <div class="promo">
+                      <div class="promo__img" style="background-image: url('static/images/img/banner-240x400.jpg')"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-comments">
+          <div class="container">
+            <div class="comments">
+              <div class="page__top page--comments">
+                <h1 class="page__title page-title--comments">Отзывы о компании
+                  <div class="cart-title-count" id="count-rewievs" aria-label="Колличество отзывов">20</div>
+                </h1>
+                <div class="page__btn">
+                  <div class="a-btn btn__offer-video btn__rewievs">Оставить отзыв</div>
+                </div>
+              </div>
+              <ul class="comments__list">
+                <li class="comments__item">
+                  <div class="comments__block">
+                    <div class="comments__user user comments__user--middle"><img class="user__img s-forum__img--right" src="static/images/img/forum/forum-foto-1.png" alt="Картинка">
+                      <div class="user__name">Анастасия Гаева</div>
+                      <div class="user__nick-time">
+                        <div class="user__visit-time">сегодня в 18:30</div>
+                      </div>
+                    </div>
+                    <div class="comments__rating">
+                      <div class="rating__text">Оценка</div>
+                      <div class="rating">
+                        <div class="rating__icon rating__icon--cart-workroom">
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                  </div>
+                </li>
+                <li class="comments__item">
+                  <div class="comments__block">
+                    <div class="comments__user user comments__user--middle"><img class="user__img s-forum__img--right" src="static/images/img/forum/forum-foto-1.png" alt="Картинка">
+                      <div class="user__name">Анастасия Гаева</div>
+                      <div class="user__nick-time">
+                        <div class="user__visit-time">сегодня в 18:30</div>
+                      </div>
+                    </div>
+                    <div class="comments__rating">
+                      <div class="rating__text">Оценка</div>
+                      <div class="rating">
+                        <div class="rating__icon rating__icon--cart-workroom">
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                  </div>
+                </li>
+                <li class="comments__item">
+                  <div class="comments__block">
+                    <div class="comments__user user comments__user--middle"><img class="user__img s-forum__img--right" src="static/images/img/forum/forum-foto-1.png" alt="Картинка">
+                      <div class="user__name">Анастасия Гаева</div>
+                      <div class="user__nick-time">
+                        <div class="user__visit-time">сегодня в 18:30</div>
+                      </div>
+                    </div>
+                    <div class="comments__rating">
+                      <div class="rating__text">Оценка</div>
+                      <div class="rating">
+                        <div class="rating__icon rating__icon--cart-workroom">
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                  </div>
+                </li>
+                <li class="comments__item">
+                  <div class="comments__block">
+                    <div class="comments__user user comments__user--middle"><img class="user__img s-forum__img--right" src="static/images/img/forum/forum-foto-1.png" alt="Картинка">
+                      <div class="user__name">Анастасия Гаева</div>
+                      <div class="user__nick-time">
+                        <div class="user__visit-time">сегодня в 18:30</div>
+                      </div>
+                    </div>
+                    <div class="comments__rating">
+                      <div class="rating__text">Оценка</div>
+                      <div class="rating">
+                        <div class="rating__icon rating__icon--cart-workroom">
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="svg-sprite-icon  icon-star rating__star orange">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                  </div>
+                </li>
+              </ul>
+              <textarea name="content" id="editor"></textarea>
+              <div class="page__btn">
+                <div class="a-btn btn__offer-video btn__comments">Добавить сообщение</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-best-pottery s-cart-workroom-best">
+          <div class="container">
+            <div class="s-best-pottery__inner">
+              <div class="best-pottery__title dflex-aic cart-workroom--title">
+                <h2 class="s-best-pottery__title">Другие мастерские
+                  <!--.cart-title-count#workroom-count(aria-label="Колличество мастерских") 23-->
+                </h2><a class="all-master s-text-ml-auto cart-workrooms--tablet" href="http://localhost:3000/catalog-workroom.html">Все мастерские</a>
+                <div class="all-slider__inner s-arrow-ml-105 cart-workrooms--tablet">
+                  <div class="all-slider all-slider__best--prev all-slider--active">
+                    <svg class="svg-sprite-icon  icon-arrow-prev all-slider__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-prev"></use>
+                    </svg>
+                  </div>
+                  <div class="all-slider all-slider__best--next">
+                    <svg class="svg-sprite-icon  icon-arrow-next all-slider__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-next"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="best-pottery">
+              <div class="js-pottery">
+                <div class="js-pottery__wrapper">
+                  <div class="js-pottery__list">
+                    <div class="all-slider__item catalog-workroom-page__item" style="background-image: url('static/images/img/item-1.jpg')">
+                      <div class="pottery-content"><a class="pottery-content__title" href="http://localhost:3000/cart-workroom.html">Глиномес</a>
+                        <div class="pottery-content__rating">
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="pottery-content__address">
+                          <p class="address__title"> Адрес:</p>
+                          <p class="address__name">г. Санкт-Петербург, ул.Пушкина, дом 23</p>
+                        </div>
+                        <div class="pottery-content__count">
+                          <div class="view">
+                            <div class="view__icon">
+                              <svg class="svg-sprite-icon  icon-eye view__eye">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                              </svg>
+                            </div>
+                            <div class="view__count">1058</div>
+                          </div>
+                          <div class="massage">
+                            <div class="massage__icon">
+                              <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                              </svg>
+                            </div>
+                            <div class="massage__count">136</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="all-slider__item catalog-workroom-page__item" style="background-image: url('static/images/img/item-12.jpg')">
+                      <div class="pottery-content"><a class="pottery-content__title" href="http://localhost:3000/cart-workroom.html">Глиномес</a>
+                        <div class="pottery-content__rating">
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="pottery-content__address">
+                          <p class="address__title"> Адрес:</p>
+                          <p class="address__name">г. Санкт-Петербург, ул.Пушкина, дом 23</p>
+                        </div>
+                        <div class="pottery-content__count">
+                          <div class="view">
+                            <div class="view__icon">
+                              <svg class="svg-sprite-icon  icon-eye view__eye">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                              </svg>
+                            </div>
+                            <div class="view__count">1058</div>
+                          </div>
+                          <div class="massage">
+                            <div class="massage__icon">
+                              <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                              </svg>
+                            </div>
+                            <div class="massage__count">136</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="all-slider__item catalog-workroom-page__item" style="background-image: url('static/images/img/item-13.jpg')">
+                      <div class="pottery-content"><a class="pottery-content__title" href="http://localhost:3000/cart-workroom.html">Глиномес</a>
+                        <div class="pottery-content__rating">
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="pottery-content__address">
+                          <p class="address__title"> Адрес:</p>
+                          <p class="address__name">г. Санкт-Петербург, ул.Пушкина, дом 23</p>
+                        </div>
+                        <div class="pottery-content__count">
+                          <div class="view">
+                            <div class="view__icon">
+                              <svg class="svg-sprite-icon  icon-eye view__eye">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                              </svg>
+                            </div>
+                            <div class="view__count">1058</div>
+                          </div>
+                          <div class="massage">
+                            <div class="massage__icon">
+                              <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                              </svg>
+                            </div>
+                            <div class="massage__count">136</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="all-slider__item catalog-workroom-page__item" style="background-image: url('static/images/img/item-14.jpg')">
+                      <div class="pottery-content"><a class="pottery-content__title" href="http://localhost:3000/cart-workroom.html">Глиномес</a>
+                        <div class="pottery-content__rating">
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="pottery-content__address">
+                          <p class="address__title"> Адрес:</p>
+                          <p class="address__name">г. Санкт-Петербург, ул.Пушкина, дом 23</p>
+                        </div>
+                        <div class="pottery-content__count">
+                          <div class="view">
+                            <div class="view__icon">
+                              <svg class="svg-sprite-icon  icon-eye view__eye">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                              </svg>
+                            </div>
+                            <div class="view__count">1058</div>
+                          </div>
+                          <div class="massage">
+                            <div class="massage__icon">
+                              <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                              </svg>
+                            </div>
+                            <div class="massage__count">136</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="all-slider__item catalog-workroom-page__item" style="background-image: url('static/images/img/item-2.jpg')">
+                      <div class="pottery-content"><a class="pottery-content__title" href="http://localhost:3000/cart-workroom.html">Глиномес</a>
+                        <div class="pottery-content__rating">
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="pottery-content__address">
+                          <p class="address__title"> Адрес:</p>
+                          <p class="address__name">г. Санкт-Петербург, ул.Пушкина, дом 23</p>
+                        </div>
+                        <div class="pottery-content__count">
+                          <div class="view">
+                            <div class="view__icon">
+                              <svg class="svg-sprite-icon  icon-eye view__eye">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                              </svg>
+                            </div>
+                            <div class="view__count">1058</div>
+                          </div>
+                          <div class="massage">
+                            <div class="massage__icon">
+                              <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                              </svg>
+                            </div>
+                            <div class="massage__count">136</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="all-slider__item catalog-workroom-page__item" style="background-image: url('static/images/img/item-1.jpg')">
+                      <div class="pottery-content"><a class="pottery-content__title" href="http://localhost:3000/cart-workroom.html">Глиномес</a>
+                        <div class="pottery-content__rating">
+                          <div class="rating">
+                            <div class="rating__icon">
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="svg-sprite-icon  icon-star rating__star">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                            <div class="rating__count">4.5</div>
+                          </div>
+                        </div>
+                        <div class="pottery-content__address">
+                          <p class="address__title"> Адрес:</p>
+                          <p class="address__name">г. Санкт-Петербург, ул.Пушкина, дом 23</p>
+                        </div>
+                        <div class="pottery-content__count">
+                          <div class="view">
+                            <div class="view__icon">
+                              <svg class="svg-sprite-icon  icon-eye view__eye">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#eye"></use>
+                              </svg>
+                            </div>
+                            <div class="view__count">1058</div>
+                          </div>
+                          <div class="massage">
+                            <div class="massage__icon">
+                              <svg class="svg-sprite-icon  icon-sms massage__sms">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#sms"></use>
+                              </svg>
+                            </div>
+                            <div class="massage__count">136</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article__banner">
+                <div class="promo">
+                  <div class="promo__img" style="background-image: url('static/images/img/banner-240x400.jpg')"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="f-menu">
+              <div class="f-menu__list">
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Каталог</a></div>
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Рейтинг</a></div>
+              </div>
+              <div class="f-menu__list">
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Отзывы</a></div>
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Магазин</a></div>
+              </div>
+              <div class="f-menu__list">
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Форум</a></div>
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Литература</a></div>
+              </div>
+              <div class="f-menu__list">
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Видеоуроки</a></div>
+                <div class="f-menu__item"><a class="f-menu__link" href="#">Блог</a></div>
+              </div>
+            </div>
+            <div class="f-socials">
+              <div class="f-socials__title">Соцсети</div>
+              <div class="f-socials__icon">
+                <div class="social">
+                  <div class="social__list"><a class="social__item" href="#"><img src="static/images/img/vk.png"></a><a class="social__item" href="#"><img src="static/images/img/face.png"></a><a class="social__item" href="#"><img src="static/images/img/twitter.png"></a><a class="social__item" href="#"><img src="static/images/img/o-class.png"></a><a class="social__item" href="#"><img src="static/images/img/youtube.png"></a><a class="social__item" href="#"><img src="static/images/img/insta.png"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="f-copyright">
+              <div class="copyright">
+                <p class="copyright__text">Copyright 2019 &#169; RegMarkets.ru</p>
+                <p class="copyright__prava">Все права защищены</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="f-copy">
+          <div class="copy"><span class="copy__text">Copyright 2019 &#169; RegMarkets.ru,</span><span class="copy__prava"> Все права защищены</span></div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+    <script src="static/js/massage.js"></script>
+  </body>
+</html>

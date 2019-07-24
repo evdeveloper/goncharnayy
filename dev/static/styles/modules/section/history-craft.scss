@@ -1,0 +1,40 @@
+.s-history-craft {
+  background-color: $white;
+  padding: 80px 0;
+  @media screen and (max-width: $tablet-big){ padding: 60px 0; }
+  @media screen and (max-width: $tablet-mini){ padding: 25px 0 30px 0;}
+  @media screen and (max-width: $phone){ padding: 20px 0 15px 0;}
+}
+
+.history-craft {
+  display: flex;
+  &__descr {
+    width: 48%;
+    max-width: 600px;
+    @media screen and (max-width: $tablet-big){
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__text {
+    p {
+      font-size: $base-big-size;
+      line-height: 25px;
+      margin-bottom: 20px;
+      font-family: $CorsRegular;
+      color: #584f4f;
+      @media screen and (max-width: $tablet-mini){ margin-bottom: 0;
+        font-size: $base-smile-size; }
+    }
+    &:last-child { margin-bottom: 0; }
+    @media screen and (max-width: $tablet-mini){ font-size: $base-smile-size; }
+  }
+  &__title {
+    margin-bottom: 25px;
+    h3 {
+      font-size: 24px;
+      @media screen and (max-width: $tablet-mini){ font-size: 20px; }
+      @media screen and (max-width: $phone){ white-space: nowrap}
+    }
+  }
+}

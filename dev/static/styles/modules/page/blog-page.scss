@@ -1,0 +1,102 @@
+.blog {
+  &__banner {
+    width: 100%;
+    padding-top: 60px;
+    color: $white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+  }
+  &-text__wrapper {
+    padding-bottom: 80px;
+    @media screen and (max-width: $tablet-big){ padding-bottom: 50px; }
+  }
+  &-bottom {
+    p {
+      margin-bottom: 30px;
+      line-height: 22px;
+      font-family: $CorsRegular;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-body {
+    display: flex;
+    &__col {
+      width: 50%;
+      margin-right: 30px;
+      @media screen and (max-width: $tablet-big){ width: 100%; }
+      &:nth-child(2n) { width: auto; height: 100%; margin-right: 0; margin-left: auto; }
+      p {
+        margin-bottom: 20px;
+        line-height: 22px;
+        font-family: $CorsRegular;
+      }
+    }
+    &__img-1 {
+      @media screen and (max-width: $tablet-big){ width: 400px; height: 250px; }
+    }
+    &__title {
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+  }
+
+}
+
+.blog-content {
+  &__title {
+    font-size: 40px;
+    font-family: $CorsMedium;
+    letter-spacing: 2.5px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    @media screen and (max-width: $tablet-big){ font-size: 30px; }
+  }
+  &__user {
+    position: relative;
+    width: 285px;
+    height: 100px;
+    margin-left: auto;
+    background-color: rgba(215, 42, 47, .6);
+    @media screen and (max-width: $tablet-big){ margin-left: 0; }
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+  &__inner {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__col {
+    max-width: 587px;
+    margin-right: 55px;
+    line-height: 22px;
+    @media screen and (max-width: $tablet-big){ margin-right: 0; max-width: 100%; }
+    &:nth-child(2n) {
+      @media screen and (max-width: $tablet-big){ display: none; }
+    }
+    &:last-child { margin-right: 0; }
+    p {
+      font-family: $CorsRegular;
+    }
+  }
+}
+
+.b-social {
+  display: flex;
+  align-items: center;
+  margin-right: 155px;
+  @media screen and (max-width: $tablet-big){ align-items: flex-start; flex-direction: column; margin-right: 0;}
+  &__icon { width: 230px; }
+  &__text {
+    font-size: $base-big-size;
+    color: #f1ded3;
+    font-family: $CorsMedium;
+    margin-right: 12px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 15px; }
+  }
+}

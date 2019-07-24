@@ -1,0 +1,269 @@
+.s-best-pottery {
+  padding: 30px 0;
+  @media screen and (max-width: $tablet-middle){ padding: 45px 0; }
+  @media screen and (max-width: $phone){ padding: 20px 0;}
+  &.s-cart-workroom-best {
+    padding: 80px 0 110px 0;
+    @media screen and (max-width: $tablet-big){ padding: 65px 0 60px 0; }
+    @media screen and (max-width: $tablet-mini){ padding: 30px 0;}
+    @media screen and (max-width: $phone){ padding: 20px 0;}
+  }
+  &__title {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    @media screen and (max-width: $tablet-big){ font-size: 30px; }
+    @media screen and (max-width: $tablet-mini){ font-size: 24px;}
+    @media screen and (max-width: $phone){ font-size: 20px;}
+  }
+}
+
+.best-pottery {
+  display: flex;
+  @media screen and (max-width: $tablet-mini){ justify-content: center; }
+  &__title {
+    position: relative;
+    max-width: 915px;
+    margin-bottom: 60px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 45px; }
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 40px; }
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 25px;}
+    @media screen and (max-width: $phone){ margin-bottom: 35px;}
+    h1 {
+      font-size: 36px;
+      letter-spacing: .25px;
+      @media screen and (max-width: $tablet-middle){ font-size: 24px }
+      @media screen and (max-width: $tablet-mini){ max-width: 230px;}
+      @media screen and (max-width: $phone){ font-size: 20px;}
+    }
+    &.cart-workroom--title {
+      @media screen and (max-width: $tablet-big){ max-width: 940px; }
+    }
+    }
+  }
+
+.all-slider {
+  &__video-inner {
+    display: flex!important;
+    max-width: 600px;
+    outline: none;
+    flex-direction: column;
+    &.s-video-lesson--inner { flex-wrap: nowrap; flex-direction: row; max-width: 100% }
+    @media screen and (max-width: $tablet-mini){ max-width: 345px; margin-right: 30px; }
+    @media screen and (max-width: $phone){ max-width: 290px;}
+  }
+  &__video-item {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    &.all-slider__video-item--clear {
+      @media screen and (max-width: $tablet-mini){ display: none; }
+    }
+    @media screen and (max-width: $tablet-big){
+      margin-right: 27px;
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+        .video-lesson__popup {
+          left: 0; top: 100%;
+          .popup { width: 295px; height: 235px; }
+        }
+      }
+    }
+    @media screen and (max-width: $tablet-middle){
+      &:nth-child(3n + 3) {
+        margin-right: 27px;
+        .video-lesson__popup { left: 100%; top: 0;
+          .popup { width: 382px; }
+        }
+      }
+      &:nth-child(2n + 2) { margin-right: 0;
+        .video-lesson__popup { left: 0; top: 100%;
+          .popup { width: 355px; }
+        }
+      }
+    }
+    @media screen and (max-width: $tablet-mini){
+      margin-bottom: 0;
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+        .video-lesson__popup { left: 0; top: 100%;
+          .popup { width: 450px; }
+        }
+      }
+      &:nth-child(2n + 2) {
+        margin-right: 30px;
+        .video-lesson__popup { left: 0; top: 100%;
+          .popup { width: 450px; }
+        }
+      }
+    }
+    @media screen and (max-width: $phone){
+      margin-bottom: 20px;
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+        .video-lesson__popup { left: 0; top: 100%;
+          .popup { width: 290px; }
+        }
+      }
+      &:nth-child(2n + 2) {
+        .video-lesson__popup { left: 0; top: 100%;
+          .popup { width: 290px; }
+        }
+      }
+    }
+    &:nth-child(4n){ margin-right: 0;
+      @media screen and (max-width: $tablet-big){ margin-right: auto; }
+    }
+    &:hover {
+      .video-play { @include size(80px); background-color: $white; }
+      .video-play__icon { @include size(20px); fill: $base-color-red; }
+      .video-play--bottom{top: 50%;}
+      .video-item__title { opacity: 0;}
+    }
+    &.s-video-lesson__item {
+      &:nth-child(even) { margin-right: 30px;}
+    }
+
+  }
+  &__item {
+    display: flex!important;
+    width: 100%;
+    max-width: 285px;
+    box-shadow: 5px 7px 6px -3px #4d4c4d;
+    height: 440px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+    margin-right: 30px;
+    transition: .3s linear;
+    &:hover { box-shadow: none; }
+    &:last-child { margin-right: 0; }
+    &.all-slider--smile__item {
+      flex-wrap: wrap;
+      @media screen and (max-width: $tablet-mini){ flex-wrap: nowrap; height: 100%; }
+    }
+    &.catalog-workroom-page__item {
+      @media screen and (max-width: $tablet-big){ max-width: 293px; }
+      @media screen and (max-width: $tablet-middle){ max-width: 354px;
+        &:nth-child(2n) { margin-right: 0; }
+      }
+      @media screen and (max-width: $tablet-mini){
+        margin-right: 0;
+        max-width: 450px;
+      }
+      @media screen and (max-width: $phone){ max-width: 290px;}
+    }
+    @media screen and (max-width: $tablet-big){ box-shadow: none; max-width: 295px; }
+    @media screen and (max-width: $tablet-middle){ max-width: 355px; }
+    @media screen and (max-width: $tablet-mini){ max-width: 345px;}
+    @media screen and (max-width: $phone){ max-width: 290px;}
+  }
+  &__smile {
+    display: flex;
+    width: 285px;
+    height: 205px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    transition: all .3s linear;
+    &.all-slider__smile--clear {
+      @media screen and (max-width: $tablet-mini){
+        display: none;
+      }
+    }
+    @media screen and (max-width: $tablet-big){ width: 295px; }
+    @media screen and (max-width: $tablet-middle){ width: 355px; }
+    @media screen and (max-width: $tablet-mini){ width: 345px; flex: 0 0 345px; margin-bottom: 0; margin-right: 30px;}
+    @media screen and (max-width: $phone){ max-width: 290px; }
+    &.all-slider__smile--tablet-mini {
+      @media screen and (max-width: $tablet-mini){ width: 450px;}
+      @media screen and (max-width: $phone){ width: 290px;}
+    }
+    &:last-child { margin-bottom: 0; }
+    &:hover {
+      .product-item__btn {
+        &.smile--hover {
+          transition: all .3s linear;
+          position: static;
+        }
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    &.popular-product--arrow-clear {
+      @media screen and (max-width: $tablet-mini){ display: none; }
+    }
+    &.popular-product--arrow-show {
+      display: none;
+      @media screen and (max-width: $tablet-mini){ display: flex; }
+    }
+    &.s-arrow-ml {
+      margin-left: 154px;
+      @media screen and (max-width: $tablet-middle){ margin-left: 0;}
+    }
+    &.s-arrow-ml-105 {
+      margin-left: 105px;
+      &.cart-workrooms--tablet {
+        @media screen and (max-width: $tablet-big){ margin-left: 0; }
+      }
+    }
+    @media screen and (max-width: $phone){ align-self: flex-end; }
+
+  }
+  &__icon {
+    @include size(20px);
+    fill: #75675e;
+    cursor: pointer;
+  }
+  &.all-slider--active {
+    .all-slider__icon {fill: $base-color-red;}
+  }
+  &--next,
+  &__best--next,
+  &__product--next,
+  &__video--next,
+  &__articles--next,
+  &__workroom--next,
+  &__photo--next,
+  &__letters--next,
+  &__product-mini--next
+  {margin-left: 20px;}
+
+}
+
+.pottery {
+  &-content {
+    margin-top: auto;
+    padding: 30px;
+    color: $white;
+    & > * {  &:not(:last-child) { margin-bottom: 28px; }}
+    &__count { display: flex; color: $white; }
+    &__title {
+      display: block;
+      font-size: 18px;
+      outline: none;
+      color: $white;
+      font-family: $CorsMedium;
+      transition: color .3s linear;
+      &:hover { text-decoration: underline; color: #d4c2b8; }
+    }
+  }
+}
+
+.js-pottery {
+  max-width: 915px;
+  margin-right: 30px;
+  &__list { display: flex; }
+  &__wrapper {
+    box-shadow: 6px 11px 22px 0 #4d4c4d;
+    transition: all .3s linear;
+    &:hover { box-shadow: none; }
+    @media screen and (max-width: $tablet-big){ box-shadow: none; }
+  }
+  @media screen and (max-width: $tablet-big){ max-width: 620px; }
+  @media screen and (max-width: $tablet-middle){ margin-right: 0; max-width: 740px; }
+  @media screen and (max-width: $phone){ max-width: 290px;}
+}

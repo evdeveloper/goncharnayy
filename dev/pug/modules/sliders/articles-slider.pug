@@ -1,0 +1,16 @@
+.articles__slider
+    .articles__title.dflex-aic
+        h2 Статьи
+        a(href="http://localhost:3000/blog.html").all-master.home-page--video Все статьи
+        .all-slider__inner
+            .all-slider.all-slider__articles--prev.all-slider--active
+                +icon('arrow-prev','all-slider__icon')
+            .all-slider.all-slider__articles--next
+                +icon('arrow-next','all-slider__icon')
+    .js-article
+        .js-article__wrapper
+            ul.js-article__list
+                include ../../pages/article-item/article-item
+                include ../../pages/article-item/article-item-1
+                include ../../pages/article-item/article-item-2
+                include ../../pages/article-item/article-item-3

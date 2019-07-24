@@ -1,0 +1,9 @@
+section.s-subscribe-video.s-subscribe--blog
+    .container
+        .block-subscribe.dflex-aic.other-articles--subscribe
+            .block-subscribe__text Подписаться на новости
+            .block-subscribe__form
+                form(action="/" class="form_m" method="post" id="subsr")
+                    input(type="email" placeholder="Ваша почта" name="user__email" class="form__email")
+                    button(type="submit").btn.sendmail-btn Подписаться
+                        +icon('action-arr','action-btn__icon subscribe__btn')

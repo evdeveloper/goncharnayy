@@ -1,0 +1,42 @@
+.video-lesson-page {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.video-lesson {
+  &--items {
+    position: relative;
+    height: 205px;
+    margin-bottom: 30px;
+    transition: all .3s linear;
+    @media screen and (max-width: $tablet-mini){
+      width: 450px;
+      &:last-child {
+        .video-lesson__popup { top: -166px; }
+      }
+    }
+    @media screen and (max-width: $phone){
+      width: 290px;
+      &:last-child {
+        .video-lesson__popup { top: -180px; }
+      }
+    }
+    &:hover {
+      box-shadow: 6px 11px 22px 0 #4d4c4d;
+      .popup {
+        display: flex;
+        box-shadow: 6px 11px 22px 0 #4d4c4d;
+      }
+    }
+
+  }
+  &__popup {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 100;
+    @media screen and (max-width: $tablet-mini){ left: 0; top: 100%; }
+  }
+}

@@ -1,0 +1,74 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 30px;
+  background-color: $white;
+  @media screen and (max-width: $tablet-middle){ padding: 30px 25px;}
+  @media screen and (max-width: $tablet-mini){ flex-direction: column;}
+  @media screen and (max-width: $phone){ padding: 15px 60px; margin-left: -15px; margin-right: -15px; }
+  &__col {
+    display: flex;
+    align-items: center;
+    max-width: 315px;
+    @media screen and (max-width: $tablet-middle){ width: 30%; flex-direction: column; text-align: center; }
+    @media screen and (max-width: $tablet-mini){ text-align: left; width: 100%; max-width: 100%; margin-bottom: 25px; &:last-child { margin-bottom: 0;}}
+    @media screen and (max-width: $phone){
+      margin-bottom: 15px;
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+
+.adv {
+  &-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @include size(80px);
+    background-color: #fbf9f8;
+    border-radius: 50%;
+    @media screen and (max-width: $tablet-middle){ top: 0; left: 50%; transform: translateX(-50%); }
+    @media screen and (max-width: $tablet-mini){ top: 50%; left: 0; transform: translateY(-50%);}
+    @media screen and (max-width: $phone){ top: 0; left: 50%; transform: translateX(-50%);}
+  }
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.adv-content {
+  position: relative;
+  flex: 0 0 320px;
+  padding-left: 110px;
+  @media screen and (max-width: $tablet-big){ padding-left: 100px; max-width: 274px; }
+  @media screen and (max-width: $tablet-middle){ padding-left: 0; padding-top: 100px; max-height: 200px;}
+  @media screen and (max-width: $tablet-mini){ padding-left: 100px; padding-top: 0; max-height: 90px; max-width: 100%;}
+  @media screen and (max-width: $phone){
+    padding-left: 0;
+    padding-top: 100px;
+    max-height: 200px;
+    text-align: center;
+    max-width: 100%;
+  }
+  &__title {
+    font-size: $base-big-size;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: #72645b;
+    font-size: 13px;
+    font-family: $CorsRegular;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+}
+
+.detail {
+  color: $base-color-red;
+  font-size: $base-smile-size;
+  text-decoration: underline;
+}

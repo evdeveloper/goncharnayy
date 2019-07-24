@@ -1,0 +1,25 @@
+section.s-photo-workroom
+    .container
+        .photo-workroom
+            .photoworkroom
+                .photoworkroom__title.dflex-aic
+                    h2.s-photo-workroom__title  Фото наших мастерских
+                        .cart-title-count#photo-count(aria-label="Колличество фото мастерских") 120
+                    a(href="http://localhost:3000/video-lesson.html").all-master.s-text-ml-auto.s-photo-workroom--all-master Все фото
+                    .all-slider__inner.s-arrow-ml
+                        .all-slider.all-slider__photo--prev.all-slider--active
+                            +icon('arrow-prev','all-slider__icon')
+                        .all-slider.all-slider__photo--next
+                            +icon('arrow-next','all-slider__icon')
+
+                .js-photoworkroom
+                    .js-photoworkroom__wrapper
+                        ul.js-photoworkroom__list
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item-1
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item-2
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item-3
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item-1
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item-2
+                            include ../../modules/section/s-photo-workroom-item/s-photo-workroom-item-3

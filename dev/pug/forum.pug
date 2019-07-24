@@ -1,0 +1,20 @@
+extends template/main
+
+block variables
+    - var title = 'Форум'
+    - var pageClass = 'forum-page'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__forum Форум
+
+    include pages/forum-page
+
+

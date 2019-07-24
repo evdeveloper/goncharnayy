@@ -1,0 +1,43 @@
+.s-cart-workroom-tabs {
+  padding: 80px 0 30px 0;
+  @media screen and (max-width: $tablet-middle){ padding-top: 50px; }
+  @media screen and (max-width: $tablet-mini){ padding-top: 30px;}
+  @media screen and (max-width: $phone){ padding: 20px 0;}
+}
+
+.cart-tabs {
+  display: flex;
+  &__title {
+    display: inline-block;
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 40px; font-size: 30px; }
+    @media screen and (max-width: $tablet-middle){ font-size: 24px;}
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 20px;}
+    @media screen and (max-width: $phone){ font-size: 20px;}
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 0; }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-right: 170px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.active {
+  color: $base-color-red;
+  border-bottom: 4px dotted $base-color-red;
+}

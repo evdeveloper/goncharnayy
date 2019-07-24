@@ -1,0 +1,122 @@
+.rating-workroom {
+  &__item {
+    display: flex;
+  }
+  &__right { width: 100%; background-color: $white; }
+}
+
+
+.rating-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 30px;
+  border-bottom: 1px solid #f4ede9;
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: $CorsMedium;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.state-workroom {
+  align-self: flex-end;
+  margin-bottom: 25px;
+  font-size: 12px;
+  font-family: $CorsRegular;
+  &.cart-work--margin-top {
+    margin-top: 17px;
+    @media screen and (max-width: $tablet-big){ margin-top: 15px; }
+  }
+  &.cart-work--state {
+    align-self: flex-start;
+    margin-bottom: 0;
+    font-size: 15px;
+    @media screen and (max-width: $tablet-big){ font-size: 12px; }
+  }
+  &.open-workroom { color: #39b54a; }
+  &.close-workroom { color: $base-color-red; }
+  &.close-repair-workroom { color: #8560a8; }
+  &.close-time-15min-workroom { color: #f36f31; }
+}
+
+.reviews-cart {
+  display: flex;
+  &__workroom { font-size: $base-smile-size; font-family: $CorsRegular; }
+  &__count {
+    color: $base-color-red;
+    text-decoration: underline;
+    font-size: $base-smile-size;
+    font-family: $CorsRegular;
+    margin-left: 4px;
+  }
+}
+
+.rating-body {
+  display: flex;
+  padding: 20px 30px;
+  height: auto;
+  &__maps {
+    margin-top: 17px;
+    @media screen and (max-width: $tablet-big){ margin-top: 10px; }
+  }
+  &__col {
+    max-width: 245px;
+    margin-right: 100px;
+    @media screen and (max-width: $tablet-big){ margin-right: 0; }
+    &:last-child {
+      margin-right: 0;
+      @media screen and (max-width: $tablet-mini){ margin-top: 30px; }
+      @media screen and (max-width: $phone){ margin-top: 0;}
+    }
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: $base-smile-size;
+  }
+  &__address-all {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: $CorsRegular;
+    color: #448ccb;
+    border-bottom: 1px dotted #448ccb;
+  }
+  &__address {
+    font-family: $CorsRegular;
+    font-size: $base-smile-size;
+    line-height: 20px;
+    color: #7c6f66;
+  }
+  &__phone {
+    display: block;
+    font-family: $CorsRegular;
+    font-size: $base-smile-size;
+    line-height: 22px;
+    color: #7c6f66;
+    @media screen and (max-width: $tablet-big){ line-height: 20px; }
+  }
+  &__email {
+    margin-top: 17px;
+    @media screen and (max-width: $tablet-big){ margin-top: 10px; }
+  }
+  &__maps,
+  &__email {
+    a {
+      text-decoration: underline;
+      color: $base-color-red;
+      font-weight: 500;
+      font-family: $CorsRegular;
+      transition: all .3s linear;
+      @media screen and (max-width: $tablet-big){ font-size: 12px; }
+      &:hover { color: #f64141; }
+    }
+  }
+}
+
+.scroll-descr::-webkit-scrollbar { width: 5px; }
+.scroll-descr::-webkit-scrollbar-thumb { background-color: #d72a2f;}
+.scroll-descr::-webkit-scrollbar-track { background-color: #f1ece9;}

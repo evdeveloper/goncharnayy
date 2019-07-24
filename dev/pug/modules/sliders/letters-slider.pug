@@ -1,0 +1,19 @@
+.letters
+    .letters__slider
+        .letters__title.dflex-aic
+            h2 Литература
+            a(href="http://localhost:3000/literatura.html").all-master.home-page--video Вся литература
+            .all-slider__inner
+                .all-slider.all-slider__letters--prev.all-slider--active
+                    +icon('arrow-prev','all-slider__icon')
+                .all-slider.all-slider__letters--next
+                    +icon('arrow-next','all-slider__icon')
+        .js-letters
+            .js-letters__wrapper
+                ul.js-letters__list
+                    include ../../pages/literature-item/literature-item
+                    include ../../pages/literature-item/literature-item-1
+                    include ../../pages/literature-item/literature-item-2
+                    include ../../pages/literature-item/literature-item-2
+                    include ../../pages/literature-item/literature-item-2
+                    include ../../pages/literature-item/literature-item-2

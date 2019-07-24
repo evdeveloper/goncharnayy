@@ -1,0 +1,68 @@
+section.s-articles
+    .container
+        .art-wrapper
+            .inner-wrapper
+                .articles
+                    include ../../modules/sliders/articles-slider
+                    .articles__banner
+                        .promo
+                            .promo__img(style="background-image: url('static/images/img/banner-240x400.jpg')")
+
+                .maps-and-forum
+                    .master-maps
+                        .master-maps__title
+                            h2 Карта мастерских
+                        .master-maps__img
+                            picture
+                                source(srcset="static/images/img/maps.jpg" media="(max-width: 970px)")
+                                img(src="static/images/img/maps-default.jpg" alt="Картинка").maps-img
+                    .forum-and-slider
+                        .letters__wrapper
+                            include ../sliders/letters-slider
+                        .forum
+                            .forum__title
+                                h2 Форум
+                                a(href="http://localhost:3000/forum.html").forum__link перейти на форум
+                            .forum__inner.forum--scroll
+                                ul.forum__list
+                                    li.forum__item
+                                        a(href="http://localhost:3000/forum.html").forum__item-text Под Воронежем нашли ребро мамонта с застрявшим наконечником
+                                    li.forum__item
+                                        a(href="http://localhost:3000/forum.html").forum__item-text Под Воронежем нашли ребро мамонта с застрявшим наконечнико
+                                    li.forum__item
+                                        a(href="http://localhost:3000/forum.html").forum__item-text Под Воронежем нашли ребро мамонта с застрявшим наконечнико
+                                    li.forum__item
+                                        a(href="http://localhost:3000/forum.html").forum__item-text Под Воронежем нашли ребро мамонта с застрявшим наконечнико
+                                    li.forum__item
+                                        a(href="http://localhost:3000/forum.html").forum__item-text Под Воронежем нашли ребро мамонта с застрявшим наконечнико
+                                    li.forum__item
+                                        a(href="http://localhost:3000/forum.html").forum__item-text Под Воронежем нашли ребро мамонта с застрявшим наконечнико
+
+
+            .art-aside
+                .literature
+                    h2.literature__title Литература
+                    ul.literature__list
+                        li.literature__item
+                            img(src="static/images/img/liter-item-1.jpg" alt="Картинка").literature__img
+                            .literature__btn
+                                a(href="#")
+                                    .a-btn.liter--btn Читать
+                        li.literature__item
+                            img(src="static/images/img/liter-item-2.jpg" alt="Картинка").literature__img
+                            .literature__btn
+                                a(href="#")
+                                    .a-btn.liter--btn Читать
+                        li.literature__item
+                            img(src="static/images/img/liter-item-3.jpg" alt="Картинка").literature__img
+                            .literature__btn
+                                a(href="#")
+                                    .a-btn.liter--btn Читать
+
+
+
+
+
+
+
+

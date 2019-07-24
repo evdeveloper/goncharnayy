@@ -1,0 +1,99 @@
+.s-cart-product-page
+    .container
+        .cart-product-page
+            .page__top.cart-product--page
+                h1.page__title Кот с клубком ниток
+                .page__btn.cart-product--btn
+                    .a-btn.btn__offer-video.catalog-product--btn
+                        .page-btn__text Добавить свой товар
+
+        .carts-product__inner
+            .carts-product
+                .carts-product__left
+                    .carts__slider.carts__slider--prev.carts__slider--active
+                        +icon('left-arrow','carts-product__icon')
+                    .carts__slider.carts__slider--next
+                        +icon('right-arrow','carts-product__icon')
+                    .js-carts-slider
+                        .js-carts-slider__inner
+                            ul.js-carts-slider__list
+                                include ../pages/cart-product-item/cart-slide-big-item
+                                include ../pages/cart-product-item/cart-slide-big-item
+                                include ../pages/cart-product-item/cart-slide-big-item
+                                include ../pages/cart-product-item/cart-slide-big-item
+                                include ../pages/cart-product-item/cart-slide-big-item
+                                include ../pages/cart-product-item/cart-slide-big-item
+
+                            ul.js-carts-mini__list
+                                include ../pages/cart-product-item/cart-slide-mini-item
+                                include ../pages/cart-product-item/cart-slide-mini-item
+                                include ../pages/cart-product-item/cart-slide-mini-item
+                                include ../pages/cart-product-item/cart-slide-mini-item
+                                include ../pages/cart-product-item/cart-slide-mini-item
+                                include ../pages/cart-product-item/cart-slide-mini-item
+
+                .carts-product__right
+                    .carts-right__top
+                        .carts-right__price 790
+                            +icon('ruble','carts-right__icon')
+                        .carts-right__btn
+                            .carts-basket-btn В корзину
+                                +icon('basket','carts-right__basket')
+                    .carts-right__hidden
+                        .busket-items__user.user.carts-product--hidden
+                            img(src="static/images/img/forum/forum-foto-1.png" alt="Картинка").user__img.s-forum__img--right
+                            .user__name.busket-rating__name Гончарная бухта
+                            .rating
+                                .rating__icon
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                .rating__count.busket__count 4.5
+                        .carts-product-all.carts-product--hidden
+                            .carts-product-all__title Товаров
+                            a(href="#").carts-product-all__count продает 32 товара
+                        .carts-right__price 790
+                            +icon('ruble','carts-right__icon')
+                        .carts-right__btn.carts-product--hidden
+                            .carts-basket-btn В корзину
+                                +icon('basket','carts-right__basket')
+                    .carts-right__body
+                        .cart-descr__title Краткое описание
+                        .cart-descr__line
+                            .d-advantage__item.cart-product--line
+                                .d-advantage__left Материал
+                                .d-advantage__line
+                                .d-advantage__right глина
+                            .d-advantage__item.cart-product--line
+                                .d-advantage__left Цвет
+                                .d-advantage__line
+                                .d-advantage__right микс
+                            .d-advantage__item.cart-product--line
+                                .d-advantage__left Вес
+                                .d-advantage__line
+                                .d-advantage__right 320 гр.
+                        .cart-descr__descr.scroll-descr
+                            p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+
+                    .carts-right__footer
+                        .busket-items__user.user
+                            img(src="static/images/img/forum/forum-foto-1.png" alt="Картинка").user__img.s-forum__img--right
+                            .user__name.busket-rating__name Гончарная бухта
+                            .rating
+                                .rating__icon
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                    +icon('star','rating__star orange busket__star')
+                                .rating__count.busket__count 4.5
+                        .carts-product-all
+                            .carts-product-all__title Товаров
+                            a(href="#").carts-product-all__count продает 32 товара
+
+
+
+        .carts-product__advantage
+            include ../modules/advantages/advantages

@@ -1,0 +1,41 @@
+.catalog-workroom {
+  &__body {
+    display: flex;
+    & > * {
+        &:not(:last-child) { margin-right: 30px }
+    }
+  }
+  &__content {
+    @media screen and (max-width: $phone){ max-width: 290px; }
+  }
+  &__banner {
+    margin-top: 30px;
+    @media screen and (max-width: $tablet-big){ display: none; }
+  }
+  &__filter {
+    margin-bottom: 30px;
+    @media screen and (max-width: $tablet-big){ display: none; }
+  }
+  &__pagination {
+    margin-bottom: 30px;
+    @media screen and (max-width: $tablet-big){ display: flex; justify-content: center; }
+  }
+}
+
+.workroom-item {
+  margin-top: 30px;
+  @media screen and (max-width: $tablet-mini){ margin-top: 20px;}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    & > * {
+      margin-bottom: 30px;
+      box-shadow: none!important;
+      @media screen and (max-width: $phone){ margin-bottom: 20px; }
+      &:nth-child(3n) {
+        margin-right: 0;
+        @media screen and (max-width: $tablet-middle){ margin-right: 30px; }
+      }
+    }
+  }
+}

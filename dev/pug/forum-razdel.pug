@@ -1,0 +1,20 @@
+extends template/main
+
+block variables
+    - var title = 'Раздел форума'
+    - var pageClass = 'forum-page-razdel'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/forum.html").breadcrumbs-inner__link Форум
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__forum Раздел форума
+
+    include pages/forum-page-razdel

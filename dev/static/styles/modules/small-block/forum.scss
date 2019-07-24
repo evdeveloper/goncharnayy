@@ -1,0 +1,101 @@
+.forum {
+  position: relative;
+  @media screen and (max-width: $tablet-middle){ width: 100%; margin-bottom: 40px; }
+  @media screen and (max-width: $tablet-mini){max-width: 450px}
+  @media screen and (max-width: $phone){ max-width: 290px; margin-bottom: 20px;}
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 310px;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    @media screen and (max-width: $tablet-big){ width: 400px; background-color: rgba(251, 249, 248, .9); }
+    @media screen and (max-width: $tablet-middle){ width: 95%; }
+    @media screen and (max-width: $tablet-mini){ background-color: rgba(251, 249, 248, .5); }
+  }
+  &__link {
+    display: none;
+    margin-left: auto;
+    color: $base-color-red;
+    text-decoration: underline;
+    font-size: 14px;
+    @media screen and (max-width: $tablet-big){ display: block; }
+
+  }
+  &__inner {
+    overflow: auto;
+    height: 410px;
+    margin-right: 30px;
+    @media screen and (max-width: $tablet-big){ margin-right: 0; height: 320px; }
+    @media screen and (max-width: $tablet-middle){ height: 270px; }
+    &::-webkit-scrollbar-track { background-color: $base-color-red; }
+  }
+
+  &__list {
+    margin-right: 20px;
+    @media screen and (max-width: $tablet-middle){
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: $tablet-mini) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 36px;
+      @media screen and (max-width: $tablet-middle){ font-size: 24px; }
+    }
+    @media screen and (max-width: $tablet-big){ margin-bottom: 45px; }
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 20px;}
+  }
+  &__item {
+    width: 100%;
+    padding: 25px 20px;
+    background-color: $white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    @media screen and (max-width: $tablet-middle){ width: calc(50% - 30px); margin-right: 30px;
+      &:nth-child(even) { margin-right: 0; }
+    }
+    @media screen and (max-width: $tablet-mini) { width: 100%; max-width: 425px; }
+    @media screen and (max-width: $phone){ max-width: 260px; padding: 15px 20px;}
+    &:last-child { margin-bottom: 0; }
+    &-text {
+      line-height: 22px;
+      font-family: $CorsMedium;
+      color: $black;
+      transition: color .3s linear;
+    }
+    &:hover {
+      box-shadow: 0 5px 6px -4px #4d4c4d;
+      .forum__item-text {
+        text-decoration: underline;
+        color: $base-color-red;
+      }
+    }
+  }
+}
+
+.forum--scroll::-webkit-scrollbar-track { background-color: #f1ece9;}
+.forum--scroll::-webkit-scrollbar-thumb {background-color: $base-color-red;}
+.forum--scroll::-webkit-scrollbar {
+  width: 10px;max-height: 190px;
+  @media screen and (max-width: $tablet-big){ max-height: 8px; }
+}
+
+
+
+
+
+

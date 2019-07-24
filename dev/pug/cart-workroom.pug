@@ -1,0 +1,24 @@
+extends template/main
+
+block variables
+    - var title = 'Карточка мастерской'
+    - var pageClass = 'cart-workroom-page'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__forum Карточка мастерской
+
+    include pages/cart-workroom-page
+
+block script
+    script(src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js")
+    script(src="static/js/massage.js")
+
+

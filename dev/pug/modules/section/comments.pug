@@ -1,0 +1,16 @@
+section.s-comments
+    .container
+        .comments
+            .page__top.page--comments
+                h1.page__title.page-title--comments Комментарии
+                .page__btn
+                    .a-btn.btn__offer-video.btn__comments Оставить комментарий
+            ul.comments__list
+                include ../section/comments-item/comments-item
+                include ../section/comments-item/comments-item-1
+                include ../section/comments-item/comments-item-2
+                include ../section/comments-item/comments-item-3
+
+            textarea(name="content" id="editor")
+            .page__btn
+                .a-btn.btn__offer-video.btn__comments Оставить комментарий

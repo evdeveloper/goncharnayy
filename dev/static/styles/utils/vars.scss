@@ -1,0 +1,45 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$base-color-red: #d72a2f;
+$color-bg-page: #fbf9f8;
+$basket-color: #73655b;
+$color-star-opacity: #efe7e3;
+$color-star-yellow: #fff568;
+$color-star-orange: #f26522;
+
+
+// Sizes
+
+$base-big-size: 16px;
+$base-font-size: 15px;
+$base-smile-size: 14px;
+
+$breakpoints: (
+        "phone"       : 400px,
+        "phone-wide"  : 480px,
+        "phablet"     : 560px,
+        "tablet-small": 640px,
+        "tablet"      : 768px,
+        "tablet-big"  : 970px,
+        "tablet-wide" : 1024px,
+        "desktop"     : 1248px,
+        "desktop-wide": 1440px
+);
+
+$tablet-big: 971px;
+$tablet-middle: 769px;
+$tablet-mini: 481px;
+$phone: 321px;
+
+$content-size: 1024px;
+
+// Fonts
+
+$CorsRegularIt: 'CorsicaLXRegularItalic',Aria,sans-serif;
+$CorsBook: 'CorsicaLXBook',Aria,sans-serif;
+$CorsBold: 'CorsicaLXBold',Aria,sans-serif;
+$CorsRegular: 'CorsicaLXRegular',Aria,sans-serif;
+$CorsMedium: 'CorsicaLXMedium',Aria,sans-serif;
+$CorsSemiBold: 'CorsicaLXSemiBold',Aria,sans-serif;

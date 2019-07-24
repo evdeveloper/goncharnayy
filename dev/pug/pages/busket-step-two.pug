@@ -1,0 +1,77 @@
+.s-busket-step-two
+    .container
+        .busket-step-two
+            .page__top
+                h1.page__title Ваша корзина
+                .page__descr Доставка
+
+        .busket-data
+            .busket-data__item
+                .data-item__title Ваши данные
+                .data-item__input.data-item__input--middle
+                    .data-item__input-item
+                        label(for="user__name") Имя
+                        input(type="text" name="name" id="user__name" class="data-input")
+                    .data-item__input-item
+                        label(for="user__surname") Фамилия
+                        input(type="text" name="name" id="user__surname" class="data-input")
+                    .data-item__input-item
+                        label(for="user__phone") Телефон
+                        input(type="tel" name="name" id="user__phone" class="data-input")
+            .busket-data__item
+                .data-item__title Адрес доставки
+                .data-item__input
+                    .data-item__input-item.data-item__input-item--phone
+                        label(for="user__city") Ваш город
+                        input(type="text" name="name" id="user__city" class="data-input data-input--mini-b")
+                    .data-item__input-item
+                        label(for="user__street") Улица
+                        input(type="text" name="name" id="user__street" class="data-input data-input--mini-m")
+                    .data-item__input-item
+                        label(for="user__home") Дом
+                        input(type="text" name="name" id="user__home" class="data-input input-home")
+                    .data-item__note
+                        span
+                         sup  *
+                        | эти данные нужны для определения ближайщих пунктов выдачи товара
+            .busket-data__item.busket-data--pr
+                .data-item__title Выбрать доставку
+                .data-item__radio
+                    .data-item__input-item.data-item--radio
+                        label(for="mail__russia" class="data-radio--label") Почта России
+                            input(type="radio" name="name" checked="checked" id="mail__russia" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/pochta-rf.png" alt="Почта России").data-item__logo
+                    .data-item__input-item.data-item--radio
+                        label(for="mail__sdk" class="data-radio--label") СДЭК
+                            input(type="radio" name="name" id="mail__sdk" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/sdek.png" alt="СДЭК").data-item__logo
+                    .data-item__input-item.data-item--radio
+                        label(for="mail__d-line" class="data-radio--label") Деловые линии
+                            input(type="radio" name="name" id="mail__d-line" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/delovy-line.png" alt="Деловые линии").data-item__logo
+                    .data-item__input-item.data-item--radio
+                        label(for="mail__ems" class="data-radio--label") EMS
+                            input(type="radio" name="name" id="mail__ems" class="data-input__radio")
+                            .data-item__img
+                                img(src="static/images/img/ems.png" alt="EMS").data-item__logo
+            .busket-data__item
+                .data-item__title Ближайщий пост
+                .data-item__maps
+                    img(src="static/images/img/post-maps.jpg")
+
+            .busket-data__item
+                .busket-product__total.busket-data--price
+                    .total
+                        .total-price
+                            .total__text Итого:
+                            .total__price 6.060
+                                +icon('ruble','total__icon')
+                        .total__btn
+                            a(href="http://localhost:3000/busket-step-1.html").step-btn.step-btn__left Назад
+                                +icon('left-arrow','step-btn__icon back')
+                            a(href="http://localhost:3000/busket-step-3.html").step-btn Далее
+                                +icon('right-arrow','step-btn__icon')
+

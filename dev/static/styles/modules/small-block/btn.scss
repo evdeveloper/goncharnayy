@@ -1,0 +1,315 @@
+.btn {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 50px;
+  color: $white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s linear;
+  @media screen and (max-width: $tablet-mini){ width: 50%; max-width: 190px; }
+  @media screen and (max-width: $phone){ width: 100%; max-width: 250px;}
+  &:hover { box-shadow: -1px 4px 12px -4px rgba(77,76,77,1); }
+  &__theme {
+    height: 36px;
+    border-radius: 50px;
+    color: $white;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+    letter-spacing: 0.5px;
+    outline: none;
+    background-color: $base-color-red;
+    cursor: pointer;
+    transition: all .3s linear;
+    &:last-child { margin-right: 0; }
+    &.forum-theme__answer { width: 105px;
+      &:hover { background-color: #D7624E; }
+    }
+    &.forum-theme__quote{ width: 125px; background-color: #74665d;
+      &:hover { background-color: #988b8a; }
+    }
+  }
+  &.sendmail-btn {
+    position: relative;
+    padding-right: 45px;
+    @media screen and (max-width: $tablet-mini) { padding: 0; }
+    &:after {
+      content: '';
+      @include size(13px);
+      background-color: $white;
+      position: absolute;
+      right: 90px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      @media screen and (max-width: $tablet-mini){ right: 20px; }
+      @media screen and (max-width: $phone){ right: 50px;}
+    }
+  }
+}
+
+.btn-write-vendor {
+  position: relative;
+  width: 207px;
+  height: 40px;
+  background-color: #74665d;
+  border-radius: 50px;
+  color: $white;
+  font-family: $CorsRegular;
+  letter-spacing: .25px;
+  cursor: pointer;
+  font-size: 13px;
+  padding-left: 55px;
+  line-height: 44px;
+  transition: all .3s linear;
+  @media screen and (max-width: $tablet-mini){ max-width: 185px; padding-left: 40px; }
+  @media screen and (max-width: $phone){ max-width: 100%; width: 100%; text-align: center;padding-left: 0;}
+  &:hover { background-color: $base-color-red; }
+  &__icon {
+    position: absolute;
+    @include size(19px);
+    fill: $white;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: $tablet-mini){ @include size(16px); left: 15px; }
+    @media screen and (max-width: $phone){ left: 40px;}
+  }
+}
+.btn-add-favorite {
+  position: relative;
+  cursor: pointer;
+  width: 207px;
+  height: 40px;
+  font-family: $CorsRegular;
+  letter-spacing: .25px;
+  background-color: #74665d;
+  border-radius: 50px;
+  color: $white;
+  font-size: 13px;
+  padding-left: 40px;
+  line-height: 44px;
+  transition: all .3s linear;
+  @media screen and (max-width: $phone){ text-align: center; padding-left: 20px; width: 100%; }
+  &:hover { background-color: $base-color-red; }
+  &__icon {
+    position: absolute;
+    @include size(15px);
+    fill: $white;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: $phone){ left: 40px; }
+  }
+}
+
+.carts-basket-btn {
+  position: relative;
+  padding-left: 30px;
+  letter-spacing: 1px;
+  width: 180px;
+  color: $white;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  font-size: $base-font-size;
+  font-weight: bold;
+  background-color: $base-color-red;
+  transition: all .3s linear;
+  line-height: 54px;
+  &:hover {
+    box-shadow: 0 5px 15px -7px #4d4c4d;
+  }
+}
+
+.a-btn {
+  display: block;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid $base-color-red;
+  color: $base-color-red;
+  text-align: center;
+  font-weight: bold;
+  transition: all .3s linear;
+  line-height: 40px;
+  &:hover {
+    box-shadow: 0 5px 15px -7px #4d4c4d;
+    &.video-popup--btn { background-color: $base-color-red; color: $white; }
+  }
+  &.btn--busket {
+    color: $white;
+    margin: auto;
+    margin-top: 15px;
+    &:hover { background-color: $base-color-red;}
+  }
+  &.bg-red { background-color: $base-color-red; }
+  &.btn--action {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    line-height: 45px;
+    color: $white;
+    padding-right: 42px;
+    transition: all .3s linear;
+    @media screen and (max-width: $tablet-mini){ margin: auto; padding-right: 20px; }
+    &:hover { border-color: $white; }
+    &:after {
+      content: '';
+      @include size(13px);
+      background-color: $white;
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      @media screen and (max-width: $tablet-mini){ right: 35px; }
+    }
+  }
+  &.liter--btn {
+    width: 122px;
+    color: $white;
+    transition: opacity .3s linear;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: 0;
+
+  }
+  &.btn__create--theme {
+    position: relative;
+    width: 180px;
+    color: #000000;
+    text-align: right;
+    padding-right: 33px;
+    height: 50px;
+    background-color: transparent;
+    line-height: 50px;
+    @media screen and (max-width: $tablet-middle){
+      max-width: 160px;
+      height: 40px;
+      line-height: 40px;
+      padding-right: 25px;
+    }
+    &:before {
+      content: '+';
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $black;
+      font-weight: bold;
+      @media screen and (max-width: $phone){ left: 22px;}
+    }
+  }
+  &.liter-item--btn {
+    width: 120px;
+    transition: all .3s linear;
+    &:hover {
+      background-color: $base-color-red;
+      color: $white;
+    }
+  }
+  &.preload--btn {
+    position: relative;
+    margin: 50px auto;
+    width: 180px;
+    color: #000000;
+    text-align: right;
+    padding-right: 25px;
+    height: 50px;
+    background-color: transparent;
+    line-height: 50px;
+    @media screen and (max-width: $tablet-big){ margin: 0 auto 30px;}
+    @media screen and (max-width: $tablet-mini){ margin: 0 auto 20px;}
+    @media screen and (max-width: $phone){ height: 40px; line-height: 40px; }
+    &.video--lesson {
+      margin: 20px auto 50px;
+      @media screen and (max-width: $tablet-big){ margin: 20px auto 30px;}
+      @media screen and (max-width: $tablet-mini){ margin: 30px auto 30px;}
+      @media screen and (max-width: $phone){ margin: 20px auto 20px; }
+    }
+  }
+
+  &.btn__offer-video {
+    position: relative;
+    width: 230px;
+    cursor: pointer;
+    color: $black;
+    padding-right: 25px;
+    padding-left: 40px;
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    &.catalog-product--btn {
+      width: 240px;
+      @media screen and (max-width: $tablet-mini){
+        width: 220px;
+        &:before { left: 23px; }
+      }
+
+    }
+
+    &:before {
+      content: '+';
+      position: absolute;
+      left: 30px;
+      font-size: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $black;
+      font-weight: bold;
+      @media screen and (max-width: $tablet-mini) { left: 13px; }
+    }
+    &.catalog-workroom--btn {
+      width: 285px;
+      &:before {
+        @media screen and (max-width: $tablet-mini){ left: 18px; }
+      }
+      @media screen and (max-width: $tablet-mini){ width: 265px; }
+    }
+    &.blog--btn { color: #f1ded3; margin: auto;
+      &:before { color: #f1ded3; }
+    }
+    @media screen and (max-width: $tablet-mini){
+      width: 190px;
+      padding-right: 0;
+      padding-left: 15px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+  }
+  &.btn__comments {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    @media screen and (max-width: $tablet-middle){
+      width: 230px;
+      height: 40px;
+      line-height: 40px;
+      padding-right: 20px;
+      padding-left: 35px;
+    }
+    @media screen and (max-width: $phone){ width: 290px; margin: auto; height: 50px; line-height: 50px; }
+    &:before {
+      left: 34px;
+      font-size: 18px;
+      @media screen and (max-width: $tablet-middle){ left: 23px; }
+      @media screen and (max-width: $phone){ left: 50px; }
+    }
+  }
+  &.btn__rewievs {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    @media screen and (max-width: $phone){ height: 40px; line-height: 40px;}
+    &:before {
+      @media screen and (max-width: $tablet-mini){ left: 30px;}
+    }
+  }
+
+}

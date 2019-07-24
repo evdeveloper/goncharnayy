@@ -1,0 +1,7 @@
+.rating-workroom {
+  &__list {
+    & > * {margin-bottom: 30px}
+  }
+  &__map { margin-bottom: 30px; }
+  &__filter-top { margin-bottom: 30px;}
+}

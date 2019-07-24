@@ -1,0 +1,94 @@
+.location {
+  position: relative;
+  width: 185px;
+  padding-left: 20px;
+  flex: 0 0 185px;
+  line-height: 40px;
+  background-color: $color-bg-page;
+  border-radius: 50px;
+  height: 40px;
+  cursor: pointer;
+  &__popup {
+    width: 370px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: $white;
+    padding: 25px 35px 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -7px;
+      border: 8px solid #fff;
+      border-color: transparent transparent #fff #fff;
+      transform: translateX(-50%) rotate(135deg);
+      box-shadow: -2px 2px 3px -2px rgba(57,73,76,0.1);
+      left: 50%;
+
+    }
+  }
+  &__icon {
+    position: absolute;
+    right: 20px;
+    top:13px;
+    width: 9px;
+    height: 9px;
+    fill: $base-color-red;
+  }
+  &__text {
+    font-family: $CorsRegular;
+    font-size: $base-smile-size;
+    padding-right: 30px;
+  }
+}
+
+//.l-triangle {
+//  position: absolute;
+//  left: 50%;
+//  margin-left: -5px;
+//  top: -10px;
+//  box-shadow: 1px 1px 8px -4px #000000;
+//  transform: rotate(45deg);
+//  @include size(20px);
+//  background-color: $white;
+//
+//}
+
+.locations {
+  @media screen and (max-width: $tablet-mini){ display: none; }
+}
+
+.l-popup {
+  font-family: $CorsMedium;
+  &__title {
+    font-size: $base-big-size;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #76685f;
+    background-color: #f4ede9;
+    margin-right: 15px;
+    &.l-popup--active {
+      background-color: $base-color-red;
+      color: $white;
+    }
+    &:last-child { margin-right: 0; }
+  }
+}
+
+

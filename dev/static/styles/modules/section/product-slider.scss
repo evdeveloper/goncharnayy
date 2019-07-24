@@ -1,0 +1,70 @@
+.s-product-slider {
+  background-color: $white;
+  padding-bottom: 100px;
+  @media screen and (max-width: $tablet-big){ padding-bottom: 30px; }
+  @media screen and (max-width: $phone){ padding-bottom: 0;}
+}
+
+.product-slider {
+  display: flex;
+  width: 100%;
+  padding-top: 80px;
+  @media screen and (max-width: $tablet-middle){ flex-wrap: wrap; padding-top: 50px; }
+  @media screen and (max-width: $phone){ padding-top: 20px;}
+  &__col {
+    width: 50%;
+    max-width: 600px;
+    margin-right: 30px;
+    @media screen and (max-width: $tablet-big ){ max-width: 615px; width: 100%; }
+    @media screen and (max-width: $tablet-middle){ max-width: 740px; }
+    &:last-child { margin-right: 0; }
+    &.media-screen--tablet-big {
+      @media screen and (max-width: $tablet-big ){ max-width: 295px; }
+      @media screen and (max-width: $tablet-middle){ max-width: 740px; }
+    }
+
+  }
+}
+
+.popular-product {
+  @media screen and (max-width: $tablet-middle){ margin-bottom: 50px; }
+  @media screen and (max-width: $phone){ margin-bottom: 20px;}
+  &__title {
+    position: relative;
+    margin-bottom: 56px;
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 40px; }
+    h2 {
+      font-size: 36px;
+      letter-spacing: .25px;
+      @media screen and (max-width: $tablet-middle){ font-size: 24px }
+      @media screen and (max-width: $tablet-mini){ max-width: 140px;}
+      @media screen and (max-width: $phone){ font-size: 20px;}
+    }
+  }
+}
+
+.videolesson {
+  &__title {
+    position: relative;
+    margin-bottom: 56px;
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 40px; }
+    h2 {
+      font-size: 36px;
+      letter-spacing: .25px;
+      @media screen and (max-width: $tablet-middle){ font-size: 24px }
+      @media screen and (max-width: $tablet-mini){ max-width: 220px;}
+      @media screen and (max-width: $phone){ font-size: 20px; max-width: 183px;}
+    }
+  }
+}
+
+.js-popular-product {
+  &__list {
+    display: flex;
+    @media screen and (max-width: $tablet-mini){ display: none; }
+    &--mini {
+      display: none;
+      @media screen and (max-width: $tablet-mini){ display: flex; }
+    }
+  }
+}

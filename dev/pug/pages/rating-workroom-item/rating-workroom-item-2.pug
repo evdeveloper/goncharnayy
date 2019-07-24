@@ -1,0 +1,37 @@
+li.rating-workroom__item
+    .rating-workroom__left
+        img(src="static/images/img/rating/rating-img-1.jpg")
+    .rating-workroom__right
+        .rating-top
+            .rating-top__left
+                .rating-top__title Мастер на все руки
+                .rating-top__rating
+                    .rating
+                        .rating__icon
+                            +icon('star','rating__star orange')
+                            +icon('star','rating__star orange')
+                            +icon('star','rating__star orange')
+                            +icon('star','rating__star orange')
+                            +icon('star','rating__star orange')
+                        .rating__count 4.5
+            .rating-top__right
+                .state-workroom.open-workroom Сейчас открыто
+                .reviews-cart
+                    .reviews-cart__workroom Отзывы о мастерской:
+                    a(href="#").reviews-cart__count 203
+
+
+        .rating-body
+            .rating-body__col
+                .rating-body__title Адрес:
+                .addr
+                    span.rating-body__address г.Санкт-Петербург, ул.Пушкина, дом 23, 8 этаж офис 108а
+                    a(href="#").rating-body__address-all еще 3
+                .rating-body__maps
+                    a(href="#") Показать на карте
+            .rating-body__col
+                .rating-body__title Телефон:
+                a(href="tel:79085541892").rating-body__phone +7 (908) 554-18-92
+                a(href="tel:79085541892").rating-body__phone +7 (908) 554-18-92
+                .rating-body__email
+                    a(href="mailto:goncharnay@mail.ru") Написать на почту

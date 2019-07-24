@@ -1,0 +1,12 @@
+.cart-workroom {
+  &__inner {
+    margin-bottom: 30px;
+    @media screen and (max-width: $phone){ margin-bottom: 20px;}
+  }
+  &__advantage {
+    margin-bottom: 80px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 60px; }
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 30px;}
+    @media screen and (max-width: $phone){ margin-bottom: 20px;}
+  }
+}

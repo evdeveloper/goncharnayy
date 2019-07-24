@@ -1,0 +1,92 @@
+.s-cart-workroom
+    .container
+        .cart-workroom
+            .page__top.cart-product--page
+                h1.page__title Студия гончарного дела
+                .page__btn.cart-product--btn
+                    .a-btn.btn__offer-video.catalog-workroom--btn
+                        .page-btn__text Добавить свою мастерскую
+            .cart-workroom__inner
+                .cart-work
+                    .cart-work__left
+                        picture
+                            source(srcset="static/images/img/cart-work-phone.jpg" media="(max-width: 321px)")
+                            source(srcset="static/images/img/cart-work-mini.jpg" media="(max-width: 481px)")
+                            source(srcset="static/images/img/cart-work-middle.jpg" media="(max-width: 769px)")
+                            img(src="static/images/img/cart-workroom/cart-workroom-item.jpg").cart-work__img
+
+                        .cart-work__rating
+                            .cart-rating__title Рейтинг мастерской
+                            .cart-rating
+                                .rating
+                                    .rating__icon
+                                        +icon('star','rating__star')
+                                        +icon('star','rating__star')
+                                        +icon('star','rating__star')
+                                        +icon('star','rating__star')
+                                        +icon('star','rating__star')
+                                    .rating__count 5.0
+
+                    .cart-work__right
+                        .cart-work__top
+                            .cart-work__item
+                                .cart-rating
+                                    .cart-rating__title Рейтинг мастерской
+                                    .cart-rating
+                                        .rating
+                                            .rating__icon
+                                                +icon('star','rating__star orange')
+                                                +icon('star','rating__star orange')
+                                                +icon('star','rating__star orange')
+                                                +icon('star','rating__star orange')
+                                                +icon('star','rating__star orange')
+                                            .rating__count 4.5
+                            .cart-work__item
+                                .cart-price
+                                    .cart-price__text
+                                        span цена одного изделия от
+                                    .cart-price__count 290
+                                    +icon('ruble','cart-price__icon')
+                            .cart-work__item
+                                img(src="static/images/img/cart-workroom/slava_logo.png" alt="Cлава").slava-img
+
+                        .cart-work__body
+                            .rating-body__col
+                                .rating-body__title Адрес:
+                                .rating-body__inner
+                                    span.rating-body__address г.Санкт-Петербург, ул.Пушкина, дом 23, 8 этаж офис 108а
+                                    a(href="#").rating-body__address-all еще 3
+                                .rating-body__maps.cart-work--margin-top
+                                    a(href="#") Показать на карте
+                            .rating-body__col
+                                .rating-body__title Телефон:
+                                a(href="tel:79085541892").rating-body__phone +7 (908) 554-18-92
+                                a(href="tel:79085541892").rating-body__phone +7 (908) 554-18-92
+                                .rating-body__email.cart-work--margin-top
+                                    a(href="mailto:goncharnay@mail.ru") Написать на почту
+                            .rating-body__col
+                                .rating-body__title График работы:
+                                .rating-body__phone Пн.- Пт. с 10:00 до 22:00
+                                .rating-body__phone Сб. и Вс.- выходной день
+                                .state-workroom.open-workroom.cart-work--state.cart-work--margin-top Сейчас открыто
+                        .cart-work__footer
+                            .cart-footer
+                                .cart-footer__text
+                                    span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                .cart-footer__btn
+                                    .btn-write-vendor(aria-label="Написать продавцу") Написать продавцу
+                                        +icon('email','btn-write-vendor__icon')
+                                    .btn-add-favorite(aria-label="Добавить в избранное") Добавить в избранное
+                                        +icon('star','btn-add-favorite__icon')
+        .cart-workroom__advantage
+            include ../modules/advantages/advantages
+
+include ../modules/section/filiation-workroom
+include ../modules/section/s-photo-workroom
+include ../modules/section/s-detail-description
+include ../modules/section/s-cart-workroom-tabs
+include ../modules/section/s-cart-workroom-video-lesson
+include ../modules/section/s-cart-workroom-other-articles
+include ../modules/section/s-cart-workroom-comments
+include ../modules/section/s-cart-workroom-best-pottery
+

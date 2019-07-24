@@ -1,0 +1,26 @@
+section.s-best-pottery
+    .container
+        .s-best-pottery__inner
+            .best-pottery__title.dflex-aic
+                h1 Лучшие гончарные мастерские
+                a(href="http://localhost:3000/catalog-workroom.html").all-master.phone--media-m Все мастерские
+                .all-slider__inner
+                    .all-slider.all-slider__best--prev.all-slider--active
+                        +icon('arrow-prev','all-slider__icon')
+                    .all-slider.all-slider__best--next
+                        +icon('arrow-next','all-slider__icon')
+            .best-pottery
+                .js-pottery
+                    .js-pottery__wrapper
+                        .js-pottery__list
+                            include ../../pages/slider-pottery-item/pottery__item
+                            include ../../pages/slider-pottery-item/pottery__item-1
+                            include ../../pages/slider-pottery-item/pottery__item-2
+                            include ../../pages/slider-pottery-item/pottery__item-3
+                            include ../../pages/slider-pottery-item/pottery__item-4
+                            include ../../pages/slider-pottery-item/pottery__item-5
+
+                .article__banner
+                    .promo
+                        .promo__img(style="background-image: url('static/images/img/banner-240x400.jpg')")
+

@@ -1,0 +1,23 @@
+section.s-video-lesson
+    .container
+        .video-lesson
+            .videolesson
+                .videolesson__title.dflex-aic.s-video-lesson--dflex-aic
+                    h2.s-video-lesson__title Видеоуроки по этой теме
+                    a(href="http://localhost:3000/video-lesson.html").all-master.s-text-ml-auto Все уроки
+                    .all-slider__inner.s-arrow-ml
+                        .all-slider.all-slider__video--prev.all-slider--active
+                            +icon('arrow-prev','all-slider__icon')
+                        .all-slider.all-slider__video--next
+                            +icon('arrow-next','all-slider__icon')
+                .js-videolesson
+                    .js-videolesson__wrapper
+                        .js-videolesson__list
+                            include ../section/s-video-item/s-video-item
+                            include ../section/s-video-item/s-video-item-1
+                            include ../section/s-video-item/s-video-item-1
+                            include ../section/s-video-item/s-video-item-1
+
+
+
+

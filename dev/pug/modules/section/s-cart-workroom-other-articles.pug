@@ -1,0 +1,26 @@
+section.s-other-articles
+    .container
+        .other-articles.cart-workroom--tablet-big
+            .articles__slider.s-other-articles--slider
+                .articles__title.dflex-aic.s-video-lesson--dflex-aic
+                    h2.s-other-articles__title Статьи от нашей мастерской
+                        .cart-title-count#other-count(aria-label="Колличество статей") 230
+                    a(href="http://localhost:3000/blog.html").all-master.s-text-ml-auto.s-photo-workroom--all-master Все статьи
+                    .all-slider__inner.s-arrow-ml
+                        .all-slider.all-slider__articles--prev.all-slider--active
+                            +icon('arrow-prev','all-slider__icon')
+                        .all-slider.all-slider__articles--next
+                            +icon('arrow-next','all-slider__icon')
+                .other-articles__wrapper
+                    .js-article.s-other-articles--js
+                        .js-article__wrapper
+                            .js-article__list
+                                include ../section/s-articles-item/s-articles-item
+                                include ../section/s-articles-item/s-articles-item-1
+                                include ../section/s-articles-item/s-articles-item-2
+                                include ../section/s-articles-item/s-articles-item-3
+                                include ../section/s-articles-item/s-articles-item-4
+                                include ../section/s-articles-item/s-articles-item-5
+                    .other-articles__banner
+                        .promo
+                            .promo__img(style="background-image: url('static/images/img/banner-240x400.jpg')")

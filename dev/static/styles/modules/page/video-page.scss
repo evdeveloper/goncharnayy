@@ -1,0 +1,112 @@
+.s-video-page {
+  padding-bottom: 90px;
+  @media screen and (max-width: $tablet-big){ padding-bottom: 40px; }
+  @media screen and (max-width: $tablet-middle){ padding-bottom: 20px; }
+}
+
+.s-video-lesson-page { overflow: hidden; }
+
+.video-gallery {
+  display: flex;
+  @media screen and (max-width: $tablet-big){ flex-wrap: wrap; }
+  &__col {
+    margin-right: 30px;
+    @media screen and (max-width: $tablet-big){ margin-right: 0; }
+    &:last-child { margin-right: 0; }
+  }
+  &__img {
+    @media screen and (max-width: $tablet-big){ margin-bottom: 20px; }
+  }
+}
+
+.video-big-img {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  width: 917px;
+  height: 640px;
+  @media screen and (max-width: $tablet-big){ width: 940px; }
+  @media screen and (max-width: $tablet-middle){ max-width: 740px; height: 390px; }
+  @media screen and (max-width: $tablet-mini){ width: 450px; height: 320px; }
+  &:hover {
+    .video-play {
+      @include size(80px);
+      background-color: $white;
+    }
+    .video-play__icon {
+      @include size(20px);
+      fill: $base-color-red;
+    }
+  }
+}
+
+.video-big-text {
+  margin-top: auto;
+  color: $white;
+  line-height: 22px;
+  span {
+    font-family: $CorsRegular;
+    line-height: 22px;
+  }
+}
+
+.video-slide {
+  &__img {
+    position: relative;
+    width: 255px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 155px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: all .3s linear;
+    @media screen and (max-width: $tablet-big){ width: 295px; }
+    @media screen and (max-width: $tablet-middle){ width: 226px;}
+    &:hover {
+      .video-play {
+        @include size(60px);
+        background-color: #ffffff;
+      }
+      .video-play__icon {
+        @include size(20px);
+        fill: #d72a2f;
+      }
+    }
+  }
+  &__inner {
+    overflow-y: scroll;
+    height: 640px;
+    @media screen and (max-width: $tablet-big){
+      max-width: 940px;
+      overflow-y: hidden;
+      overflow-x: auto;
+      height: 235px;
+    }
+    @media screen and (max-width: $tablet-middle){ max-width: 740px; }
+    @media screen and (max-width: $tablet-mini){ max-width: 450px; }
+}
+  &__item {
+    margin-bottom: 18px;
+    transition: all .3s linear;
+    @media screen and (max-width: $tablet-big){ margin-right: 30px; }
+    @media screen and (max-width: $tablet-middle){ margin-right: 20px; max-width: 215px;}
+    &:last-child {margin-bottom: 0;}
+    &:hover {
+      box-shadow: 0 0 13px -5px #4d4c4d;
+    }
+  }
+  &__list {
+    margin-right: 25px;
+    @media screen and (max-width: $tablet-big){ display: flex; }
+  }
+  &__item-text {
+    line-height: 20px;
+    letter-spacing: .25px;
+  }
+}
+

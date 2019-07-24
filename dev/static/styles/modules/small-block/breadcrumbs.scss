@@ -1,0 +1,41 @@
+.breadcrumbs-inner {
+  display: flex;
+  font-weight: bold;
+  margin: 30px 0 50px 0;
+  @media screen and (max-width: $tablet-big){ margin: 30px 0 40px 0;}
+  @media screen and (max-width: $tablet-middle){ margin: 30px 0 30px 0; }
+  @media screen and (max-width: $tablet-mini){ margin: 25px 0 20px 0; }
+  @media screen and (max-width: $phone){ margin: 15px 0 20px 0; }
+  & > * {
+    &:not(:last-child) {  margin-right: 20px; }
+  }
+  &__link {
+    display: block;
+    color: #72645b;
+    position: relative;
+    transition: all .3s linear;
+    @media screen and (max-width: $phone){ font-size: 12px; }
+    &:hover {
+      font-weight: bold;
+      color: $base-color-red;
+      text-decoration: underline;
+    }
+  }
+  &__item {
+    @media screen and (max-width: $phone){ font-size: 12px; }
+  }
+  &__home {
+    &:after {
+      content: '';
+      position: absolute;
+      right: -12px;
+      top: 8px;
+      width: 4px;
+      height: 4px;
+      background-color: #d72a2f;
+      @media screen and (max-width: $phone){ top: 4px; }
+
+    }
+  }
+
+}

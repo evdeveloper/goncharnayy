@@ -1,0 +1,26 @@
+extends template/main
+
+block variables
+    - var title = 'Обсуждение'
+    - var pageClass = 'forum-theme-page'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/forum.html").breadcrumbs-inner__link Форум
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/forum-razdel.html").breadcrumbs-inner__link Раздел форума
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__forum Обсуждение
+
+    include pages/forum-page-theme
+
+block script
+    script(src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js")
+    script(src="static/js/massage.js")

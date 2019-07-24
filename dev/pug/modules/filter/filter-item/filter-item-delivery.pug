@@ -1,0 +1,15 @@
+li.filter__item
+    .filter__title Доставка
+    .filter-item__inner
+        .filter__input-item
+            input(type="radio" id="client"  name="delivery" checked="checked" class="filter__input")
+            label(for="client" class="filter__label") За счет покупателя
+            span.filter__product-count (651)
+        .filter__input-item
+            input(type="radio" id="free"    name="delivery" class="filter__input")
+            label(for="free" class="filter__label") Бесплатная
+            span.filter__product-count (85)
+        .filter__input-item
+            input(type="radio" id="service" name="delivery" class="filter__input")
+            label(for="service" class="filter__label") Служба доставки
+            span.filter__product-count (1270)

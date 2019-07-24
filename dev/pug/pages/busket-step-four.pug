@@ -1,0 +1,30 @@
+.s-busket-step-four
+    .container
+        .busket-step-four
+            .page__top
+                h1.page__title Ваша корзина
+                .page__descr Подтвердить доставку
+
+        .busket-data
+            .busket-data__item.busket-data__item--middle
+                .user-data
+                    .user-data__col
+                        .user-data__title Ваши данные
+                        .user-data__text Иван Иванов
+                    .user-data__phone +7 (921) 543-45-43
+                    .user-data__col
+                        .user-data__title Пост выдачи
+                        .user-data__text г.Москва, ул.Уличная, дом 8
+                    .user-data__col
+                        .user-data__title Способ оплаты
+                        .user-data__text Картой при получении
+            .busket-data__item
+                .busket-product__total.busket-data--price
+                    .total
+                        .total-price
+                            .total__text Итого:
+                            .total__price 6.060
+                                +icon('ruble','total__icon')
+                        .total__btn
+                            a(href="http://localhost:3000/busket-step-5.html").checkout-btn Оформить заказ
+                                +icon('tick','total__tick')

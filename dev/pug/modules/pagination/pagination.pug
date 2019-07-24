@@ -1,0 +1,22 @@
+.s-pagination
+    .pagination
+        ul.pagination__list
+            li.pagination__item
+                a(href="#").pagination__link.pagination-active
+                    +icon('left-arrow','pagination__icon pagination-active')
+            li.pagination__item
+                a(href="#").pagination__link 1
+            li.pagination__item
+                a(href="#").pagination__link 2
+            li.pagination__item
+                a(href="#").pagination__link.pagination-active 3
+            li.pagination__item
+                a(href="#").pagination__link 4
+            li.pagination__item
+                a(href="#").pagination__link.pagination--icon
+                    +icon('p-dots','pagination__icon pagination__dots')
+            li.pagination__item
+                a(href="#").pagination__link 24
+            li.pagination__item
+                a(href="#").pagination__link
+                    +icon('right-arrow','pagination__icon')

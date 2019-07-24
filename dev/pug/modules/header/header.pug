@@ -1,0 +1,79 @@
+header.header
+    .container__new
+        .header-top
+            .mobile-menu
+                .sandwich
+                    .sandwich__line.sandwich__line--top
+                    .sandwich__line.sandwich__line--middle
+                    .sandwich__line.sandwich__line--bottom
+            .header-top__item.order-1
+                .header-top__logo.logo
+                    a(href="http://localhost:3000/index.html").logo__link
+                        +icon('logo','icon__logo')
+            .header-top__item.locations
+                .location
+                    span.location__text Санкт-Петербург
+                    +icon('location-icon','location__icon')
+                    .location__popup
+                        .l-triangle
+                        .l-popup
+                            .l-popup__title Ваш город определен верно?
+                            .l-popup__inner
+                                button.l-popup__btn.l-popup--active Да, все верно
+                                button.l-popup__btn Нет, сменить регион
+            .header-top__item.order-2
+                .header-top__search.search
+                    input(type="search" class="search__input" name="search" aria-label="search" id="search" placeholder="Что ищем?")
+                    button(type="button" class="button__search" aria-label="поиск по сайту")
+                        +icon('search','search__icon')
+            .header-top__item.order-4
+                a(href="#").sing-in(aria-label="Вход")
+                    span Вход
+                    +icon('lock','sing-in__icon')
+            .header-top__item.order-3
+                a(href="http://localhost:3000/busket-step-1.html")
+                    .basket
+                        .basket__logo
+                            +icon('basket','basket__icon')
+                            .basket__count.count
+                                span 3
+                        .summa 12.000 руб.
+                        .basket__sale.sale
+                            span -10%
+    .container
+        .header-body.nav-menu
+            nav.menu
+                ul.menu__list
+                    li.menu__item
+                        a(href="http://localhost:3000/catalog-workroom.html").menu__link Каталог мастерских
+
+                    li.menu__item
+                        a(href="http://localhost:3000/rating-workroom.html").menu__link Рейтинг
+                    li.menu__item
+                        a(href="#").menu__link Отзывы
+                    li.menu__item
+                        a(href="http://localhost:3000/catalog-product.html").menu__link Магазин
+                    li.menu__item
+                        a(href="http://localhost:3000/forum.html").menu__link Форум
+                    li.menu__item
+                        a(href="http://localhost:3000/literatura.html").menu__link Литература
+                    li.menu__item
+                        a(href="http://localhost:3000/video-lesson.html").menu__link Видеуроки
+                    li.menu__item
+                        a(href="http://localhost:3000/blog.html").menu__link Блог
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

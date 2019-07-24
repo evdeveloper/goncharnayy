@@ -1,0 +1,85 @@
+.art-wrapper {
+  display: flex;
+  padding-top: 130px;
+  @media screen and (max-width: $tablet-big){ padding-top: 30px;}
+  @media screen and (max-width: $tablet-middle){ padding-top: 20px; }
+}
+.literature {
+  &__item {
+    position: relative;
+    display: flex!important;
+    width: 230px;
+    height: 320px;
+    margin-bottom: 40px;
+    background-color: $white;
+    transition: .3s;
+    cursor: pointer;
+    @media screen and (max-width: $tablet-big){ margin-right: 30px; }
+    @media screen and (max-width: $phone){ margin-right: 40px; margin-bottom: 20px;}
+    &:last-child { margin-bottom: 0; }
+    &:hover {
+      box-shadow: 0 4px 13px -4px #4d4c4d;
+      .liter--btn { opacity: 1; }
+    }
+  }
+  &__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 48px;
+  }
+  &__img {
+    margin: auto;
+  }
+  &__title {
+    font-size: 36px;
+    margin-bottom: 65px;
+  }
+
+}
+.letters {
+  display: none;
+  @media screen and (max-width: $tablet-big){
+    display: block;
+  }
+  &__wrapper {
+    display: none;
+    @media screen and (max-width: $tablet-big){
+      display: block;
+      max-width: 480px;
+      margin-right: 30px;
+    }
+    @media screen and (max-width: $tablet-middle){ margin-right: 30px; }
+
+  }
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 55px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 45px; }
+    h2 {
+      font-size: 36px;
+      @media screen and (max-width: $tablet-middle){ font-size: 24px; }
+      @media screen and (max-width: $phone){ font-size: 20px;}
+    }
+  }
+  &__slider {
+    width: 490px;
+    @media screen and (max-width: $tablet-middle){ width: 740px; }
+    @media screen and (max-width: $tablet-mini){ max-width: 450px;}
+    @media screen and (max-width: $phone){ max-width: 290px;}
+  }
+  &__link {
+    font-size: 14px;
+    color: $base-color-red;
+    text-decoration: underline;
+    margin-left: auto;
+  }
+}
+
+.forum-and-slider {
+  display: flex;
+  @media screen and (max-width: $tablet-middle){ flex-wrap: wrap; }
+}

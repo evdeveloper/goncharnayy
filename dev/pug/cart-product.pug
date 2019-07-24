@@ -1,0 +1,24 @@
+extends template/main
+
+block variables
+    - var title = 'Карточка товара'
+    - var pageClass = 'cart-product'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__forum Карточка продукта
+
+    include pages/cart-product-page
+    include modules/section/s-detail-description
+    include modules/section/s-busket-product-slider
+
+
+
+

@@ -1,0 +1,75 @@
+.liter-page {
+  &__top {
+    margin-bottom: 45px;
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 35px;}
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 25px;}
+  }
+}
+
+.liter-cart {
+  width: 100%;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    width: 600px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: $white;
+    transition: all .3s linear;
+    @media screen and (max-width: $tablet-big){ width: 100%; margin-right: 0; }
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 20px;}
+    @media screen and (max-width: $phone){ flex-direction: column; padding: 15px; }
+    &:not(:nth-child(odd)) { margin-right: 0; }
+    &:hover {
+      box-shadow: 0 11px 21px -6px #4d4c4d;
+      .liter-item__title { color: $base-color-red; }
+    }
+  }
+  &__img {
+    width: 177px;
+    margin-right: 25px;
+    height: 277px;
+    @media screen and (max-width: $tablet-big){ width: 175px; height: 275px; }
+    @media screen and (max-width: $tablet-mini){ width: 145px; height: 215px;}
+    @media screen and (max-width: $phone){ margin-bottom: 20px; }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    @media screen and (max-width: $tablet-mini){ padding: 0; }
+  }
+}
+
+.liter-item {
+  &__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: .25px;
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 20px; }
+    @media screen and (max-width: $phone){ margin-bottom: 15px; max-width: 220px;}
+  }
+  &__btn { margin-top: auto; }
+  &__text {
+    p {
+      font-family: $CorsRegular;
+      font-size: $base-smile-size;
+      color: #72645b;
+      line-height: 22px;
+      @media screen and (max-width: $tablet-mini){
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        max-width: 240px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height:85px
+      }
+      @media screen and (max-width: $phone){ margin-bottom: 20px; }
+    }
+  }
+}

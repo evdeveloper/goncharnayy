@@ -1,0 +1,22 @@
+.video-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  transition: all .3s linear;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d72a2f;
+  &.video-play--bottom { top: 65%; }
+  &.video-play--top { top: 35%;}
+  &__icon {
+    transition: all .3s linear;
+    width: 12px;
+    height: 14px;
+    fill: $white;
+  }
+}

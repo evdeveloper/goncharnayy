@@ -1,0 +1,20 @@
+.video-item {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: $white;
+  padding: 55px 45px 50px 45px;
+  font-size: $base-big-size;
+  &__title {
+    font-family: $CorsMedium;
+    opacity: 1;
+    transition: opacity .3s linear;
+  }
+}
+
+.js-videolesson {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

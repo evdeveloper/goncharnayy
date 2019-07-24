@@ -1,0 +1,27 @@
+section.s-best-pottery.s-cart-workroom-best
+    .container
+        .s-best-pottery__inner
+            .best-pottery__title.dflex-aic.cart-workroom--title
+                h2.s-best-pottery__title Другие мастерские
+                    //.cart-title-count#workroom-count(aria-label="Колличество мастерских") 23
+                a(href="http://localhost:3000/catalog-workroom.html").all-master.s-text-ml-auto.cart-workrooms--tablet Все мастерские
+                .all-slider__inner.s-arrow-ml-105.cart-workrooms--tablet
+                    .all-slider.all-slider__best--prev.all-slider--active
+                        +icon('arrow-prev','all-slider__icon')
+                    .all-slider.all-slider__best--next
+                        +icon('arrow-next','all-slider__icon')
+        .best-pottery
+            .js-pottery
+                .js-pottery__wrapper
+                    .js-pottery__list
+                        include ../../pages/pottery-item/pottery__item
+                        include ../../pages/pottery-item/pottery__item-1
+                        include ../../pages/pottery-item/pottery__item-2
+                        include ../../pages/pottery-item/pottery__item-3
+                        include ../../pages/pottery-item/pottery__item-4
+                        include ../../pages/pottery-item/pottery__item-5
+
+            .article__banner
+                .promo
+                    .promo__img(style="background-image: url('static/images/img/banner-240x400.jpg')")
+

@@ -1,0 +1,63 @@
+.carts-product {
+  display: flex;
+  background-color: $white;
+  padding: 30px;
+  @media screen and (max-width: $tablet-big){ padding: 30px 15px; }
+  @media screen and (max-width: $tablet-middle){ flex-wrap: wrap; padding-bottom: 0;}
+  &__inner {
+    margin-bottom: 30px;
+    @media screen and (max-width: $tablet-big){ margin-left: -15px; margin-right: -15px; }
+  }
+  &__icon {
+    position: absolute;
+    @include size(14px);
+  }
+  &__advantage { margin-bottom: 30px; }
+  &__left {
+    position: relative;
+    max-width: 688px;
+    @media screen and (max-width: $tablet-big){ max-width: 510px; }
+    @media screen and (max-width: $tablet-middle){ max-width: 738px;}
+    @media screen and (max-width: $tablet-mini){ max-width: 450px;}
+    @media screen and (max-width: $phone){ max-width: 290px;}
+  }
+  &__right {
+    width: 100%;
+    padding: 0 0 20px 30px;
+    @media screen and (max-width: $tablet-middle){ padding: 0;}
+  }
+}
+
+
+.carts__slider {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-top: -70px;
+  @include size(40px);
+  border-radius: 50%;
+  transition: all .3s linear;
+  background-color: #fff;
+  @media screen and (max-width: $tablet-middle){ margin-top: -70px; }
+  &:hover { @include size(42px); }
+  &--prev {
+    left: 20px;
+    @media screen and (max-width: $phone){ left: 12px;}
+  }
+  &--next {
+    right: 20px;
+    @media screen and (max-width: $phone){ right: 12px;}
+  }
+  &.carts__slider--active {
+    background-color: $base-color-red;
+    .carts-product__icon { fill: $white; }
+  }
+}
+
+.js-carts-slider {
+  &__list { margin-bottom: 10px; }
+}

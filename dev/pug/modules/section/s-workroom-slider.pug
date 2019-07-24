@@ -1,0 +1,23 @@
+section.s-workroom-slider
+    .container
+        .workroom-slider
+            .workroom
+                .workroom__title.dflex-aic
+                    h2.s-video-lesson__title Каталог товаров от мастерских
+                    a(href="http://localhost:3000/catalog-product.html").all-master.s-photo-workroom--all-master Перейти в каталог
+                    .all-slider__inner
+                        .all-slider.all-slider__workroom--prev.all-slider--active
+                            +icon('arrow-prev','all-slider__icon')
+                        .all-slider.all-slider__workroom--next
+                            +icon('arrow-next','all-slider__icon')
+            .js-workroom
+                .js-workroom__wrapper
+                   .js-workroom__list
+                       include ../../modules/section/s-workroom-item/catalog-item
+                       include ../../modules/section/s-workroom-item/catalog-item-1
+                       include ../../modules/section/s-workroom-item/catalog-item-2
+                       include ../../modules/section/s-workroom-item/catalog-item-3
+                       include ../../modules/section/s-workroom-item/catalog-item-4
+                       include ../../modules/section/s-workroom-item/catalog-item-5
+                       include ../../modules/section/s-workroom-item/catalog-item-1
+                       include ../../modules/section/s-workroom-item/catalog-item

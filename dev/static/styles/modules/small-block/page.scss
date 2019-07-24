@@ -1,0 +1,61 @@
+.page {
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    &.cart-product--page {
+      @media screen and (max-width: $tablet-mini){
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: flex-start;
+      }
+    }
+    &.catalog-workroom--top {
+      @media screen and (max-width: $tablet-mini){ flex-wrap: wrap; }
+    }
+    &.page--comments {
+      margin-bottom: 42px;
+      @media screen and (max-width: $tablet-mini){ margin-bottom: 15px; }
+    }
+    @media screen and (max-width: $tablet-big){ margin-bottom: 40px;}
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 30px;}
+    @media screen and (max-width: $tablet-mini){ margin-bottom: 20px; }
+    @media screen and (max-width: $phone){ flex-direction: column; align-items: flex-start; margin-bottom: 10px; }
+
+  }
+  &__title {
+    font-size: 36px;
+    letter-spacing: .25px;
+    &.page-title--comments {
+      position: relative;
+      @media screen and (max-width: $tablet-mini){ font-size: 24px; max-width: 110px;}
+      @media screen and (max-width: $phone){ font-size: 20px;}
+    }
+    @media screen and (max-width: $tablet-big){ font-size: 30px;}
+    @media screen and (max-width: $tablet-middle){ font-size: 24px;}
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 10px;}
+    @media screen and (max-width: $phone){ font-size: 20px; }
+  }
+  &__descr {
+    color: #e7e1dd;
+    font-size: 24px;
+    margin-left: auto;
+    @media screen and (max-width: $tablet-middle){ font-size: 20px; }
+    @media screen and (max-width: $phone){ margin-left: 0; font-size: $base-smile-size; }
+  }
+  &__btn {
+    margin-left: auto;
+    &.catalog-workroom--btns {
+      @media screen and (max-width: $tablet-mini){ margin-left: 0; }
+    }
+    &.cart-product--btn {
+      @media screen and (max-width: $tablet-mini){ margin-left: 0; margin-top: 15px;}
+      @media screen and (max-width: $phone){ margin-top: 0;}
+    }
+    @media screen and (max-width: $phone){ margin-left: 0; }
+  }
+  &-btn__text {
+    position: relative;
+  }
+}

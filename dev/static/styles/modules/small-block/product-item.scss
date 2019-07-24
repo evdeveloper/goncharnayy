@@ -1,0 +1,24 @@
+.product-item {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin-top: auto;
+  transition: opacity .3s linear;
+  &__title {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: $CorsMedium;
+  }
+  &__price {
+    font-size: 24px;
+    color: #deccc2;
+  }
+  &__btn {
+    transition: all .3s linear;
+    &.smile--hover {
+      position: absolute;
+      top: -9999999px;
+    }
+  }
+}

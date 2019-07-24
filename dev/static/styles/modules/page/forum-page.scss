@@ -1,0 +1,163 @@
+.forum-page {
+  &__h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    @media screen and (max-width: $tablet-mini){ font-size: 20px; margin-bottom: 5px; }
+    @media screen and (max-width: $phone){ font-size: 18px; }
+  }
+  &__pagination {
+    padding-top: 30px;
+  }
+  &__title {
+    position: relative;
+    padding: 11px 0 7px 0;
+    margin-bottom: 60px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 35px; }
+    @media screen and (max-width: $tablet-mini){ padding-left: 15px;}
+    &.forum-page--theme {
+      margin-bottom: 30px;
+      @media screen and (max-width: $phone){ margin-bottom: 20px; }
+    }
+    p {
+      font-size: 15px;
+      color: #7c6f66;
+      font-family: $CorsRegular;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -57px;
+      transform: rotate(90deg);
+      width: 60px;
+      height: 6px;
+      background-color: #00bff3;
+      @media screen and (max-width: $tablet-mini){ left: -27px; }
+
+    }
+    &.before--red {
+      &:before { background-color: $base-color-red; }
+    }
+  }
+  &__items {
+    padding: 30px;
+    background-color: $white;
+    margin-bottom: 60px;
+    @media screen and (max-width: $tablet-big){ margin-bottom: 30px; }
+    @media screen and (max-width: $tablet-mini){ margin-left: -15px; margin-right: -15px; padding: 15px;}
+    @media screen and (max-width: $phone){ margin-bottom: 20px;}
+    &:last-child {
+      margin-bottom: 100px;
+      @media screen and (max-width: $tablet-big){ margin-bottom: 60px; }
+      @media screen and (max-width: $tablet-middle){ margin-bottom: 40px;}
+      @media screen and (max-width: $tablet-mini){ margin-bottom: 30px;}
+      &.forum-theme--items { margin-bottom: 30px; }
+    }
+  }
+}
+
+.s-forum {
+  li {
+    display: block;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    max-width: 785px;
+    flex: 0 0 785px;
+    height: 100%;
+    padding-right: 30px;
+    position: relative;
+    border-right: 1px solid #eee4df;
+    @media screen and (max-width: $tablet-big){ max-width: 588px; }
+    @media screen and (max-width: $tablet-middle){ max-width: 100%; border-right: none;}
+    @media screen and (max-width: $phone){ padding-left: 0; max-width: 280px;}
+  }
+  &__right {
+    margin-left: 30px;
+    &.s-forum__mobile--user {
+      @media screen and (max-width: $tablet-middle){ display: block; }
+    }
+    @media screen and (max-width: $tablet-middle){ display: none; margin-left: 0; }
+  }
+  &__massage {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    margin-left: auto;
+    line-height: 36px;
+    height: 36px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: $white;
+    &.s-forum__massage--msg {
+      @media screen and (max-width: $tablet-middle){ display: block; }
+      @media screen and (max-width: $phone){ display: none;}
+    }
+    @media screen and (max-width: $tablet-middle){ display: none; }
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    @media screen and (max-width: $phone){ @include size(40px) }
+    &--right { left: 30px; }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    background-color: $color-bg-page;
+    transition: background-color .3s linear;
+    @media screen and (max-width: $tablet-middle){ padding: 20px 30px; border-bottom: 1px solid #eee4df; }
+    @media screen and (max-width: $phone){ padding: 15px 20px;}
+    &:hover {background-color: #f5f1ee;}
+    &.forum-page--razdel {
+      padding: 20px 30px;
+      @media screen and (max-width: $phone){ padding: 15px 20px; }
+    }
+  }
+  &__mobile {
+    display: none;
+    align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    background-color: #fbf9f8;
+    transition: background-color .3s linear;
+    @media screen and (max-width: $tablet-middle){ display: flex; }
+    @media screen and (max-width: $phone){ padding: 15px 20px;}
+  }
+  &__text {
+    padding-left: 90px;
+    @media screen and (max-width: $phone){ padding-left: 55px; }
+    p {
+      font-size: $base-big-size;
+      margin-bottom: 15px;
+      color: $black;
+      @media screen and (max-width: $tablet-big){ margin-bottom: 7px; }
+      @media screen and (max-width: $phone){ font-size: $base-smile-size;}
+    }
+    span {
+      font-family: $CorsRegular;
+      font-size: $base-smile-size;
+      color: #7c6f66;
+      @media screen and (max-width: $phone){ font-size: 13px;}
+    }
+    &.forum-page--razdel-text {
+      padding-left: 0;
+      p {
+        margin-bottom: 10px;
+        @media screen and (max-width: $tablet-mini){ margin-bottom: 5px; }
+      }
+    }
+  }
+}
+
+
+

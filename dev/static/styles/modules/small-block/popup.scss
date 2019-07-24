@@ -1,0 +1,26 @@
+.popup {
+  display: none;
+  flex-direction: column;
+  width: 315px;
+  height: 205px;
+  padding: 30px;
+  background-color: $white;
+  @media screen and (max-width: $tablet-big){ width: 322px; }
+  @media screen and (max-width: $tablet-middle){ width: 382px;}
+  @media screen and (max-width: $tablet-mini){ width: 450px; padding: 20px; height: 165px;}
+  @media screen and (max-width: $phone){ width: 290px; height: 180px;}
+  &__title {
+    font-size: 18px;
+    font-family: $CorsMedium;
+    margin-bottom: 15px;
+  }
+  &__descr {
+    font-family: $CorsRegular;
+    font-size: 13px;
+    line-height: 18px;
+    color: #584f4f;
+  }
+  &__btn {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,18 @@
+section.s-comments
+    .container
+        .comments
+            .page__top.page--comments
+                h1.page__title.page-title--comments Отзывы о компании
+                    .cart-title-count#count-rewievs(aria-label="Колличество отзывов") 20
+                .page__btn
+                    .a-btn.btn__offer-video.btn__rewievs Оставить отзыв
+            ul.comments__list
+                include ../section/s-cart-workroom-comments-item/comments-items
+                include ../section/s-cart-workroom-comments-item/comments-items
+                include ../section/s-cart-workroom-comments-item/comments-items
+                include ../section/s-cart-workroom-comments-item/comments-items
+
+
+            textarea(name="content" id="editor")
+            .page__btn
+                .a-btn.btn__offer-video.btn__comments Добавить сообщение

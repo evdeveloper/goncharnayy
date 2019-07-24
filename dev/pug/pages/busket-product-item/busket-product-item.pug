@@ -1,0 +1,28 @@
+li.busket-items
+    .busket-items__left
+        .busket-items__img(style="background-image: url('static/images/img/product-basket/product-basket-1.jpg')")
+            .catalog-items__foto.catalog-items__foto--left
+                +icon('camera','catalog-items__icon')
+                span.catalog-items__count 15
+    .busket-items__content
+        .busket-items__center
+            .busket-items__name Кот с клубком ниток
+            .busket-items__price
+                span 790
+                +icon('ruble','busket-items__icon')
+        .busket-items__right
+            .busket-items__user.user
+                img(src="static/images/img/forum/forum-foto-1.png" alt="Картинка").user__img.s-forum__img--right
+                .user__name.busket-rating__name Гончарная бухта
+                .rating
+                    .rating__icon
+                        +icon('star','rating__star orange busket__star')
+                        +icon('star','rating__star orange busket__star')
+                        +icon('star','rating__star orange busket__star')
+                        +icon('star','rating__star orange busket__star')
+                        +icon('star','rating__star orange busket__star')
+                    .rating__count.busket__count 4.5
+            .busket-items__btn.cancel
+                +icon('cancel', 'cancel__icon')
+
+

@@ -1,0 +1,53 @@
+.action {
+  p {
+    font-size: 26px;
+    font-family: $CorsBook;
+    @media screen and (max-width: $phone){ font-size: 24px; }
+  }
+  h2 {
+    font-size: 60px;
+    font-family: $CorsBold;
+    margin: 15px 0;
+    text-transform: uppercase;
+    @media screen and (max-width: $tablet-middle){font-size: 50px; }
+    @media screen and (max-width: $tablet-mini){ font-size: 45px; margin: 10px 0;}
+    @media screen and (max-width: $phone){ font-size: 38px; }
+  }
+  &__btn {
+    margin-top: auto;
+    @media screen and (max-width: $tablet-mini){ margin-top: 30px; }
+    @media screen and (max-width: $phone){ margin-top: 20px;}
+  }
+  &-btn__icon {
+    position: absolute;
+    right: 42px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    @include size(8px);
+    fill: $black;
+    @media screen and (max-width: $tablet-mini){ right: 37px; }
+    &.subscribe__btn {
+      right: 92px;
+      fill: $base-color-red;
+      @media screen and (max-width: $tablet-mini){ right: 22px; }
+      @media screen and (max-width: $phone){ right: 52px;}
+    }
+    &.blog-business { left: 4px; top:7px; fill: $white; }
+  }
+}
+
+
+.slide {
+  display: flex;
+  margin-bottom: 52px;
+  @media screen and (max-width: $tablet-middle){ margin-bottom: 35px; }
+  @media screen and (max-width: $tablet-mini){ margin-bottom: 0;}
+  @media screen and (max-width: $phone){ display: none; }
+  &.carts-big--count {
+    margin-bottom: 0;
+    color: $white;
+    letter-spacing: 2px;
+    @media screen and (max-width: $phone){ display: flex; }
+  }
+}

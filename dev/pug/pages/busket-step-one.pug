@@ -1,0 +1,30 @@
+.s-busket-step-one
+    .container
+        .busket-step-one
+            .page__top
+                h1.page__title Ваша корзина
+                .page__descr Ваши товары
+        .busket-product
+            .busket-product__wrapper
+                .busket-product__list
+                    include ../pages/busket-product-item/busket-product-item
+                    include ../pages/busket-product-item/busket-product-item
+                    include ../pages/busket-product-item/busket-product-item
+                    include ../pages/busket-product-item/busket-product-item
+                    include ../pages/busket-product-item/busket-product-item
+                    include ../pages/busket-product-item/busket-product-item
+                .busket-product__total
+                    .total
+                        .total-price
+                            .total__text Итого:
+                            .total__price 6.060
+                                +icon('ruble','total__icon')
+                        .total__btn
+                            a(href="http://localhost:3000/busket-step-2.html").step-btn Далее
+                                +icon('right-arrow','step-btn__icon')
+
+
+
+
+
+

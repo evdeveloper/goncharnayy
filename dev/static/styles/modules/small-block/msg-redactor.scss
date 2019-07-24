@@ -1,0 +1,30 @@
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border: 2px solid #f4ede9!important;
+  min-height: 145px;
+  border-top: none!important;
+}
+
+.ck {
+  max-width: 1170px;
+  margin-bottom: 20px;
+}
+
+.ck.ck-toolbar {
+  background: var(--ck-color-toolbar-background);
+  border: 2px solid #f4ede9!important;
+  border-bottom: none!important;
+  padding: 4px 0!important;
+  background-color: $color-bg-page!important;
+}
+
+.ck.ck-toolbar__separator {
+  display: inline-block;
+  background-color: #f4ede9!important;
+}
+
+.ck-button__icon {
+  color: #74665d!important;
+  &:hover {
+    color: $base-color-red!important;
+  }
+}

@@ -1,0 +1,33 @@
+.popular-product
+    .popular-product__title.dflex-aic
+        h2 Популярные товары
+        a(href="http://localhost:3000/catalog-product.html").all-master.home-page--media Все товары
+        .all-slider__inner.popular-product--arrow-clear
+            .all-slider.all-slider__product--prev.all-slider--active
+                +icon('arrow-prev','all-slider__icon')
+            .all-slider.all-slider__product--next
+                +icon('arrow-next','all-slider__icon')
+        .all-slider__inner.popular-product--arrow-show
+            .all-slider.all-slider__product-mini--prev.all-slider--active
+                +icon('arrow-prev','all-slider__icon')
+            .all-slider.all-slider__product-mini--next
+                +icon('arrow-next','all-slider__icon')
+
+    .js-popular-product
+        .js-popular-product__wrapper
+            ul.js-popular-product__list
+                include ../../pages/product-item/product__item
+                include ../../pages/product-item/product__item-1
+                include ../../pages/product-item/product__item-2
+                include ../../pages/product-item/product__item-3
+                include ../../pages/product-item/product__item-3
+                include ../../pages/product-item/product__item-3
+                include ../../pages/product-item/product__item-3
+                include ../../pages/product-item/product__item-3
+            ul.js-popular-product__list--mini
+                include ../../pages/popular-product-item-mini/product__item
+                include ../../pages/popular-product-item-mini/product__item
+                include ../../pages/popular-product-item-mini/product__item
+                include ../../pages/popular-product-item-mini/product__item
+                include ../../pages/popular-product-item-mini/product__item
+                include ../../pages/popular-product-item-mini/product__item

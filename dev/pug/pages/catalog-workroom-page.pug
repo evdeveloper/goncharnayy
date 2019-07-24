@@ -1,0 +1,51 @@
+.s-catalog-workroom
+    .container
+        .catalog-workroom
+            .page__top.catalog-workroom--top
+                h1.page__title Каталог мастерских
+                .page__btn.catalog-workroom--btns
+                    .a-btn.btn__offer-video.catalog-workroom--btn
+                        .page-btn__text Добавить свою мастерскую
+
+        .catalog-workroom__body
+            .catalog-workroom__filter
+                aside.filter
+                    include ../pages/filter-workroom/filter
+                .catalog-workroom__banner
+                    .promo
+                        .promo__img(style="background-image: url('static/images/img/banner-240x400.jpg')")
+            .catalog-workroom__content
+                .filter-top__inner
+                    .filter-top__dropdown
+                        +icon('filter','filter-top__icon')
+                        .filter-top__open Открыть фильтры
+                        .filter-top__mobile
+                            aside.filter
+                                include ../pages/filter-workroom/filter
+
+                    .filter-top
+                        ul.filter-top__list
+                            li.filter-top__title.filter-workroom__title Сортировка
+                            .filter-top__select
+
+                            li.filter-top__item.filter-top--active по минимальным ценам
+                            li.filter-top__item по рейтингу
+                            li.filter-top__item по дате добавления
+                .workroom-item
+                    .workroom-item__list
+                        include ../pages/pottery-item/pottery__item
+                        include ../pages/pottery-item/pottery__item-1
+                        include ../pages/pottery-item/pottery__item-2
+                        include ../pages/pottery-item/pottery__item-3
+                        include ../pages/pottery-item/pottery__item-4
+                        include ../pages/pottery-item/pottery__item-5
+                        include ../pages/pottery-item/pottery__item
+                        include ../pages/pottery-item/pottery__item-1
+                        include ../pages/pottery-item/pottery__item-2
+                        include ../pages/pottery-item/pottery__item-3
+                        include ../pages/pottery-item/pottery__item-4
+                        include ../pages/pottery-item/pottery__item-5
+                .catalog-workroom__pagination
+                    include ../pages/pagination-catalog/pagination
+
+include ../modules/section/s-workroom-slider

@@ -1,0 +1,18 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+
+
+block content
+	include modules/header/banner
+	include modules/section/best-pottery
+	include modules/section/product-slider
+	include modules/section/articles
+	include modules/section/history-craft
+
+
+
+

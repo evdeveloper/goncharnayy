@@ -1,0 +1,18 @@
+extends template/main
+
+block variables
+    - var title = 'Видеоуроки'
+    - var pageClass = 'video-lesson-page'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__forum Видеоуроки
+
+    include pages/video-lesson-page

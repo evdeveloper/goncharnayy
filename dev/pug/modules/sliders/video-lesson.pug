@@ -1,0 +1,19 @@
+.videolesson
+    .videolesson__title.dflex-aic
+        h2 Видеоуроки
+        a(href="http://localhost:3000/video-lesson.html").all-master.home-page--media.home-page--video Все уроки
+        .all-slider__inner
+            .all-slider.all-slider__video--prev.all-slider--active
+                +icon('arrow-prev','all-slider__icon')
+            .all-slider.all-slider__video--next
+                +icon('arrow-next','all-slider__icon')
+    .js-videolesson
+        .js-videolesson__wrapper
+            ul.js-videolesson__list
+                include ../../pages/video-item/video-item
+                include ../../pages/video-item/video-item-1
+                include ../../pages/video-item/video-item-2
+                include ../../pages/video-item/video-item-3
+
+
+

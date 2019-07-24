@@ -1,0 +1,23 @@
+extends template/main
+
+block variables
+    - var title = 'Корзина'
+    - var pageClass = 'basket-step-4'
+
+
+
+block content
+    .breadcrumbs
+        .container
+            .breadcrumbs-inner
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/index.html").breadcrumbs-inner__link Главная
+                .breadcrumbs-inner__home.breadcrumbs-inner__link
+                    a(href="http://localhost:3000/catalog-product.html").breadcrumbs-inner__link Каталог товаров
+                .breadcrumbs-inner__item
+                    .breadcrumbs-inner__busket Ваша корзина
+
+
+
+    include pages/busket-step-four
+    include modules/section/s-busket-product-slider-2

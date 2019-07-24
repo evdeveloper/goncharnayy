@@ -1,0 +1,63 @@
+.user {
+  position: relative;
+  padding-left: 65px;
+  @media screen and (max-width: $tablet-middle){ padding-left: 90px;}
+  @media screen and (max-width: $tablet-mini){ padding-left: 65px;}
+  @media screen and (max-width: $phone){ padding-left: 55px; }
+  &.user--blog {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  &.comments__user--middle {
+    @media screen and (max-width: $tablet-middle){ padding-left: 65px; }
+  }
+  &.carts-product--hidden {
+    @media screen and (max-width: $tablet-middle){ padding-left: 70px; display: block; }
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    @media screen and (max-width: $phone){ @include size(40px); }
+    &--right { left: 30px; }
+  }
+  &__name {
+    display: inline-block;
+    font-family: $CorsMedium;
+    font-size: $base-smile-size;
+    margin-bottom: 2px;
+    color: $black;
+    &.busket-rating__name {
+      margin-bottom: 5px;
+      font-size: $base-big-size;
+    }
+    &.user__name--white {
+      color: $white;
+      font-size: $base-big-size;
+
+    }
+  }
+  &__visit-time {
+    color: #7c6f66;
+    font-family: $CorsRegular;
+    font-size: 13px;
+    &.user--blog {
+      color: #f1ded3;
+    }
+  }
+  &__nick {
+    margin-right: 5px;
+    color: $base-color-red;
+    font-size: 13px;
+  }
+  &__nick-time {
+    display: flex;
+    &.user__nick-time--user {
+      @media screen and (max-width: $tablet-middle){ flex-direction: row; }
+    }
+    @media screen and (max-width: $tablet-big){ flex-direction: column; line-height: 15px; }
+  }
+}

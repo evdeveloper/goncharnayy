@@ -1,0 +1,22 @@
+.catalog-product {
+  &__body { display: flex; }
+  &__banner {
+    margin-top: 30px;
+    @media screen and (max-width: $tablet-big){ display: none; }
+  }
+  &__content {
+    @media screen and (max-width: $phone){ max-width: 290px; }
+
+  }
+  &__filter {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    @media screen and (max-width: $tablet-big){ display: none; }
+  }
+  &__pagination {
+    margin-bottom: 60px;
+    @media screen and (max-width: $tablet-big){ display: flex; justify-content: center; }
+    @media screen and (max-width: $tablet-middle){ margin-bottom: 30px;}
+    @media screen and (max-width: $phone){ margin-bottom: 20px;}
+  }
+}
